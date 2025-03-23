@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .main {
+      display: flex;
+      width: 100%;
+    }
+    .menu {
+      width: 20%;
+      padding: 10px;
+      background-color: #f4f4f4;
+    }
+    .content {
+      width: 80%;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters S-15 Sky Champion</h1>
+    <a href="s-15-sky-challenger.jpg" target="_blank">
+      <img src="s-15-sky-challenger.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters S-15 Sky Champion">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters S-15 Sky Challenger Radio</h2>
+      <h3>Years of Production: 1937</h3>
+
+      <h3>Overview</h3>
+      <p>The Hallicrafters S-15 Sky Challenger is a vintage commercial receiver designed for both amateur and commercial use. It was introduced in 1937 and became known for its reliable performance and robust design.</p>
+
+      <h3>Technical Specifications</h3>
+      <ul>
+        <li>Number of Tubes: 9</li>
+        <li>Tube Types: 6K7, 6L7, 6C5, 6K7, 6K7, 6Q7, 6K7, 6F6G, 80</li>
+        <li>Main Principle: Superheterodyne with RF-stage; IF frequency 465 kHz</li>
+        <li>Tuned Circuits: 11 AM circuits</li>
+        <li>Wave Bands: Broadcast, Short Wave, and Police</li>
+        <li>Frequency Coverage: 0.545-1.23 MHz, 1.18-2.85 MHz, 2.75-6.82 MHz, 6.75-16.4 MHz, 15.4-38.1 MHz</li>
+        <li>Power Type and Voltage: AC, 115 Volt</li>
+        <li>Loudspeaker: For headphones or external amplifier</li>
+        <li>Power Output: 4 W</li>
+        <li>Material: Metal case</li>
+        <li>Dimensions: 19 x 10 x 12 inches (483 x 254 x 305 mm)</li>
+        <li>Weight: 30 lbs (13.6 kg)</li>
+      </ul>
+
+      <h3>Notable Features</h3>
+      <p>The S-15 Sky Challenger includes features such as a noise limiter, CW/AM switch, and a sensitivity control. It was designed to provide reliable communication in various environments, with a focus on durability and ease of use.</p>
+
+      <h3>Historical Context</h3>
+      <p>The Hallicrafters S-15 Sky Challenger was produced during a time when reliable communication equipment was essential. Its robust design and performance made it a popular choice for both amateur radio operators and commercial users.</p>
+  <div class="header">
+    <h2>N4IXTs Hallicrafters S-15 Sky Champion Other Images</h2>
+    <a href="s-15-sky-challenger-logo-1.jpg" target="_blank">
+      <img src="s-15-sky-challenger-logo-1.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters S-15 Sky Champion Logo 1">
+    </a>
+    <p>&nbsp;</p>
+    <a href="s-15-sky-challenger-logo-2.jpg" target="_blank">
+      <img src="s-15-sky-challenger-logo-2.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters S-15 Sky Champion Logo 2">
+    </a>
+    <p>&nbsp;</p>
+    <a href="s-15-sky-challenger-inside-1.jpg" target="_blank">
+      <img src="s-15-sky-challenger-inside-1.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters S-15 Sky Champion Inside">
+    </a>
+    <p>&nbsp;</p>
+    <a href="s-15-sky-challenger-back-1.jpg" target="_blank">
+      <img src="s-15-sky-challenger-back-1.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters S-15 Sky Champion Back 1">
+    </a>
+    <p>&nbsp;</p>
+    <a href="s-15-sky-challenger-back-2.jpg" target="_blank">
+      <img src="s-15-sky-challenger-back-2.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters S-15 Sky Champion Back 2">
+    </a>
+    <p>&nbsp;</p>
+    <a href="s-15-sky-challenger-back-3.jpg" target="_blank">
+      <img src="s-15-sky-challenger-back-3.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters S-15 Sky Champion Back 3">
+    </a>
+    <p>&nbsp;</p>
+  </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

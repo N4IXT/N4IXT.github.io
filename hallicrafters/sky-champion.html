@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .main {
+      display: flex;
+      width: 100%;
+    }
+    .menu {
+      width: 20%;
+      padding: 10px;
+      background-color: #f4f4f4;
+    }
+    .content {
+      width: 80%;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters Sky Champion</h1>
+    <a href="sky-champion.jpg" target="_blank">
+      <img src="sky-champion.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters Sky Champion">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters Sky Champion Radio</h2>
+      <h3>Years of Production: 1938–1945</h3>
+
+      <h3>Overview</h3>
+      <p>The Hallicrafters Sky Champion, including models like the S-20 and S-20R, was a mid-priced communications receiver designed for amateur radio enthusiasts. It was introduced in 1938 and became known for its reliable performance and robust design.</p>
+
+      <h3>Technical Specifications</h3>
+      <ul>
+        <li>Number of Tubes: 8 (S-20) / 9 (S-20R)</li>
+        <li>Tube Types (S-20): 6K7, 6L7, 6J5, 6K7, 6Q7, 6F6, 6J5, 80</li>
+        <li>Tube Types (S-20R): 6SK7, 6K8, 6SK7, 6SK7, 6H6, 6J5GT, 6SQ7, 6F6G, 80</li>
+        <li>Main Principle: Superheterodyne with RF-stage; IF frequency 455 kHz</li>
+        <li>Wave Bands: Broadcast, Short Wave, and Police</li>
+        <li>Frequency Coverage: 0.540-1.77 MHz, 1.72-5.4 MHz, 5.3-15.7 MHz, 15.2-44 MHz</li>
+        <li>Power Type and Voltage: AC, 117 Volt</li>
+        <li>Loudspeaker: Electro Magnetic Dynamic LS (moving-coil with field excitation coil)</li>
+        <li>Power Output: 3 W</li>
+        <li>Material: Metal case</li>
+        <li>Dimensions: 18.5 x 8.5 x 9.4 inches (470 x 215 x 240 mm)</li>
+        <li>Weight: 25 lbs 5.3 oz (11.5 kg)</li>
+      </ul>
+
+      <h3>Notable Features</h3>
+      <p>The Sky Champion series featured a wide frequency range, covering essential communication bands. The S-20R model included improvements such as electrical bandspread and a more modern tube lineup compared to the original S-20.</p>
+
+      <h3>Historical Context</h3>
+      <p>The Hallicrafters Sky Champion was produced during a time when reliable communication equipment was crucial, especially during World War II. Its design and performance made it a popular choice among amateur radio operators and professionals alike.</p>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters Sky Champion Other Images</h1>
+    <a href="sky-champion-back.jpg" target="_blank">
+      <img src="sky-champion-back.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters Sky Champion Back">
+    </a>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .main {
+      display: flex;
+      width: 100%;
+    }
+    .menu {
+      width: 20%;
+      padding: 10px;
+      background-color: #f4f4f4;
+    }
+    .content {
+      width: 80%;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters R-46 Speaker</h1>
+    <a href="r-46.jpg" target="_blank">
+      <img src="r-46.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters R-46 Speaker">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters R-46 Speaker</h2>
+      <h3>Years of Production: 1951–1954</h3>
+
+      <h3>Overview</h3>
+      <p>The Hallicrafters R-46 is a vintage tabletop speaker designed to complement various Hallicrafters receivers. It was produced in the early 1950s and became known for its robust construction and reliable performance.</p>
+
+      <h3>Technical Specifications</h3>
+      <ul>
+        <li>Type: Permanent Magnet Dynamic (PDyn) Loudspeaker</li>
+        <li>Speaker Diameter: 10 inches (25.4 cm)</li>
+        <li>Power Type: No power needed</li>
+        <li>Material: Metal case</li>
+        <li>Dimensions: 15 x 11 x 11 inches (381 x 279 x 279 mm)</li>
+        <li>Weight: 17 lbs (7.7 kg)</li>
+        <li>Matching Transformer: 5 k ohm</li>
+        <li>Audio Range: 80 Hz to 8,000 Hz</li>
+      </ul>
+
+      <h3>Notable Features</h3>
+      <p>The R-46 speaker was designed to match Hallicrafters receivers such as the SX-62, SX-71, SX-73, and SX-88. It features a 5 k ohm matching transformer and a wide audio range, making it suitable for high-fidelity audio reproduction.</p>
+
+      <h3>Historical Context</h3>
+      <p>The Hallicrafters R-46 was produced during a time when high-quality audio equipment was becoming increasingly important for both amateur and professional radio operators. Its design and performance made it a popular choice for enhancing the audio experience of Hallicrafters receivers.</p>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
