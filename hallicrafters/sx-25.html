@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .main {
+      display: flex;
+      width: 100%;
+    }
+    .menu {
+      width: 20%;
+      padding: 10px;
+      background-color: #f4f4f4;
+    }
+    .content {
+      width: 80%;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters SX-25</h1>
+    <a href="sx-25.jpg" target="_blank">
+      <img src="sx-25.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters SX-25">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters SX-25 Radio</h2>
+      <h3>Years of Production: 1940–1946</h3>
+
+      <h3>Overview</h3>
+      <p>The Hallicrafters SX-25, also known as the Super Defiant, is a vintage communications receiver designed for amateur radio enthusiasts. It was produced during the early 1940s and became well-regarded for its performance and reliability.</p>
+
+      <h3>Technical Specifications</h3>
+      <ul>
+        <li>Number of Tubes: 12</li>
+        <li>Tube Types: 6SK7, 6SK7, 6K8, 6SK7, 6SK7, 6SQ7, 6SQ7, 6H6, 6J5, 6F6, 6F6, 80</li>
+        <li>Main Principle: Superheterodyne with RF-stage; IF frequency 455 kHz</li>
+        <li>Tuned Circuits: 10 AM circuits</li>
+        <li>Wave Bands: Broadcast, Short Wave, and Police</li>
+        <li>Frequency Coverage: 0.540-1.7 MHz, 1.7-5.1 MHz, 5.0-15.7 MHz, 15.2-42 MHz</li>
+        <li>Power Type and Voltage: AC/DC, 100-125 Volt</li>
+        <li>Loudspeaker: Requires external speaker</li>
+        <li>Power Output: 8 W</li>
+        <li>Material: Metal case</li>
+        <li>Dimensions: 19.5 x 9.5 x 11.1 inches (495 x 241 x 283 mm)</li>
+        <li>Weight: 46 lbs 4.1 oz (21 kg)</li>
+      </ul>
+
+      <h3>Notable Features</h3>
+      <p>The SX-25 was designed with a wide frequency range, covering essential communication bands. It featured a crystal IF filter and could operate on both AC and DC power, making it versatile for various settings.</p>
+
+      <h3>Historical Context</h3>
+      <p>The Hallicrafters SX-25 was produced during World War II, a period when reliable communication equipment was crucial. Its robust design and performance made it a popular choice among amateur radio operators and professionals alike.</p>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

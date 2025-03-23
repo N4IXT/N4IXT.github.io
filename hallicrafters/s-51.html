@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .main {
+      display: flex;
+      width: 100%;
+    }
+    .menu {
+      width: 20%;
+      padding: 10px;
+      background-color: #f4f4f4;
+    }
+    .content {
+      width: 80%;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters S-51</h1>
+    <a href="s-51.jpg" target="_blank">
+      <img src="s-51.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters S-51">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters S-51 Radio</h2>
+      <h3>Years of Production: 1947–1949</h3>
+
+      <h3>Overview</h3>
+      <p>The Hallicrafters S-51, also known as the Sea-Farer, is a vintage commercial receiver designed for maritime use. It was produced in the late 1940s and became known for its reliability and performance in marine communication.</p>
+
+      <h3>Technical Specifications</h3>
+      <ul>
+        <li>Number of Tubes: 10</li>
+        <li>Tube Types: 6SS7, 6SS7, 6SS7, 6SS7, 7C7, 6SS7, 7A6, 6V6GT, 35L6GT, 35Z5GT</li>
+        <li>Main Principle: Superheterodyne</li>
+        <li>Wave Bands: Fixed Frequency and Multi-Band</li>
+        <li>Frequency Coverage: 132-405 kHz, 2.0-3.0 MHz, 4.2-13.0 MHz</li>
+        <li>Power Type and Voltage: AC/DC, 105-125 Volt</li>
+        <li>Output Power: 2.5 W</li>
+        <li>Material: Metal case</li>
+        <li>Dimensions: 19 x 10 x 12 inches (483 x 254 x 305 mm)</li>
+        <li>Weight: 30 lbs (13.6 kg)</li>
+      </ul>
+
+      <h3>Notable Features</h3>
+      <p>The S-51 includes features such as a noise limiter, CW/AM switch, and a sensitivity control. It was designed to provide reliable communication in maritime environments, with a focus on durability and ease of use.</p>
+
+      <h3>Historical Context</h3>
+      <p>The Hallicrafters S-51 was produced during a time when maritime communication was essential for navigation and safety. Its robust design and reliable performance made it a popular choice for commercial and amateur radio operators.</p>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters S-51</h1>
+    <a href="s-51-inside.jpg" target="_blank">
+      <img src="s-51-inside.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters S-51 Inside">
+    </a>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
