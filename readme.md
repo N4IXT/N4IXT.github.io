@@ -1,4 +1,8 @@
 # N4IXT
+  <a href="room.jpg" target="_blank">
+    <img src="room.jpg" style="max-width: 640px;" alt="N4IXTs Wall of Radios">
+  </a>
+
 
 <!DOCTYPE html>
 <html>
@@ -19,10 +23,6 @@
   </style>
 </head>
 <body>
-  <a href="room.jpg" target="_blank">
-    <img src="room.jpg" style="max-width: 640px;" alt="N4IXTs Wall of Radios">
-  </a>
-
   <div class="menu">
     <h2>Menu</h2>
     <!--<div id="menu-content"></div>-->
