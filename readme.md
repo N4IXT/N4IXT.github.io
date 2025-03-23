@@ -29,8 +29,8 @@
 </head>
 <body>
   <div class="header">
-    <a href="./room.jpg" target="_blank">
-      <img src="./room.jpg" style="max-width: 640px;" alt="N4IXTs Wall of Radios">
+    <a href="office.jpg" target="_blank">
+      <img src="office.jpg" style="max-width: 640px;" alt="N4IXTs Wall of Radios">
     </a>
   </div>
   <div class="main">
