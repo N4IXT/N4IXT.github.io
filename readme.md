@@ -1,15 +1,19 @@
-# N4IXT
-  <a href="room.jpg" target="_blank">
-    <img src="room.jpg" style="max-width: 640px;" alt="N4IXTs Wall of Radios">
-  </a>
-
-
 <!DOCTYPE html>
 <html>
 <head>
   <style>
     body {
       display: flex;
+      flex-direction: column;
+    }
+    .header {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .main {
+      display: flex;
+      width: 100%;
     }
     .menu {
       width: 20%;
@@ -23,16 +27,22 @@
   </style>
 </head>
 <body>
-  <div class="menu">
-    <h2>Menu</h2>
-    <!--<div id="menu-content"></div>-->
-    <ul>
-      <li><a href="file1.md">File 1</a></li>
-      <li><a href="file2.md">File 2</a></li>
-      <li><a href="file3.md">File 3</a></li>
-    </ul>
+  <div class="header">
+    <a href="room.jpg" target="_blank">
+      <img src="room.jpg" style="max-width: 640px;" alt="N4IXTs Wall of Radios">
+    </a>
   </div>
-  <div class="content">
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+<!--      <ul>
+        <li><a href="file1.md">File 1</a></li>
+        <li><a href="file2.md">File 2</a></li>
+        <li><a href="file3.md">File 3</a></li>
+      </ul>-->
+    </div>
+    <div class="content">
     <h2>N4IXT’s Radio Extravaganza</h2>
     <p>
 Hi, I'm Robert, N4IXT. I'm a ham radio operator, and very interested in the history of radio, both amateur and broadcast.
@@ -44,10 +54,9 @@ I also have a rather large collection of vintage books related to radio. Some hi
 Right now I have at least one of every issue of the ARRL Handbook, going back to the very first one from 1926. I have all of the "West Coast" handbooks, almost all the QSTs, and many other magazines.
 
 On this site I hope to document all of the radios in my collection. In part as I want to share with other collectors, but additionally it's gotten to where I need a good way to keep track of what I have.
-</p>
-    <!-- Add more content as needed -->
+      </p>
+    </div>
   </div>
-
   <script>
     fetch('menu.html')
       .then(response => response.text())
