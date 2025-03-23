@@ -1,6 +1,5 @@
 # N4IXT’s Radio Extravaganza
 
-<!--<!DOCTYPE html>-->
 <html>
 <head>
   <style>
