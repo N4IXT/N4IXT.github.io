@@ -1,3 +1,5 @@
+# N4IXT’s Radio Extravaganza
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,14 +38,9 @@
     <div class="menu">
       <h2>Menu</h2>
     <div id="menu-content"></div>
-<!--      <ul>
-        <li><a href="file1.md">File 1</a></li>
-        <li><a href="file2.md">File 2</a></li>
-        <li><a href="file3.md">File 3</a></li>
-      </ul>-->
     </div>
     <div class="content">
-    <h2>N4IXT’s Radio Extravaganza</h2>
+    <h2>Hello</h2>
     <p>
 Hi, I'm Robert, N4IXT. I'm a ham radio operator, and very interested in the history of radio, both amateur and broadcast.
 
@@ -65,6 +62,6 @@ On this site I hope to document all of the radios in my collection. In part as I
           document.getElementById('menu-content').innerHTML = data;
         });
     });
-  </script></body>
+  </script>
+</body>
 </html>
-
