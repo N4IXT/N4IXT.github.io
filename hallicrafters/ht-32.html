@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .main {
+      display: flex;
+      width: 100%;
+    }
+    .menu {
+      width: 20%;
+      padding: 10px;
+      background-color: #f4f4f4;
+    }
+    .content {
+      width: 80%;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters HT-32</h1>
+    <a href="ht-32.jpg" target="_blank">
+      <img src="ht-32.jpg" style="max-width: 640px;" alt="N4IXTs Wall of Radios">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+  <h2>Hallicrafters HT-32 Radio</h2>
+  <h3>Years of Production: 1957–1958</h3>
+  
+  <h3>Overview</h3>
+  <p>The Hallicrafters HT-32 is a vintage amateur radio transmitter known for its robust design and reliable performance. It was produced during the late 1950s and became popular among amateur radio enthusiasts.</p>
+  
+  <h3>Technical Specifications</h3>
+  <ul>
+    <li>Number of Tubes: 18</li>
+    <li>Tube Types: 12AX7, 12AX7, 6AL5, 12AT7, 12AU7, 12AU7, 6AH6, 6AH6, 12AT7, 6AU6, 6AB4, 6AH6, 6AH6, 6CB6, 12BY7, 6146, 6146, 5R4GY, 0A2</li>
+    <li>Main Principle: Superheterodyne</li>
+    <li>Wave Bands: 80 to 10 meters</li>
+    <li>Power Type and Voltage: AC, 105-125 Volt</li>
+    <li>Output Power: 70-100 watts CW/SSB, 17-25 watts AM</li>
+    <li>Material: Metal case</li>
+    <li>Dimensions: 20 x 10.5 x 17 inches (508 x 267 x 432 mm)</li>
+    <li>Weight: 85 lbs 14.4 oz (39 kg)</li>
+  </ul>
+  
+  <h3>Notable Features</h3>
+  <p>The HT-32 includes features such as full band switching, metering, filter-type SSB, CW break-in keying, VOX, TVI suppression, calibrated VFO, and a built-in cooling fan. It matches well with the HT-33 and SX-101 receivers[1](https://www.radiomuseum.org/r/hallicraft_ht_32_ht32.html)[2](https://www.eham.net/reviews/view-product?id=1684).</p>
+  
+  <h3>Historical Context</h3>
+  <p>The Hallicrafters HT-32 was produced during a time when amateur radio was gaining popularity. Its design reflects the technological advancements of the era and the needs of amateur radio operators[1](https://www.radiomuseum.org/r/hallicraft_ht_32_ht32.html)[2](https://www.eham.net/reviews/view-product?id=1684).</p>  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
