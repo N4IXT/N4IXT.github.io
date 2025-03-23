@@ -1,3 +1,5 @@
+# N4IXT
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,7 +25,12 @@
 
   <div class="menu">
     <h2>Menu</h2>
-    <div id="menu-content"></div>
+    <!--<div id="menu-content"></div>-->
+    <ul>
+      <li><a href="file1.md">File 1</a></li>
+      <li><a href="file2.md">File 2</a></li>
+      <li><a href="file3.md">File 3</a></li>
+    </ul>
   </div>
   <div class="content">
     <h2>N4IXT’s Radio Extravaganza</h2>
