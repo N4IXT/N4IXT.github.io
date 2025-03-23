@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .main {
+      display: flex;
+      width: 100%;
+    }
+    .menu {
+      width: 20%;
+      padding: 10px;
+      background-color: #f4f4f4;
+    }
+    .content {
+      width: 80%;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters S-22R</h1>
+    <a href="s-22r.jpg" target="_blank">
+      <img src="s-22r.jpg" style="max-width: 640px;" alt="N4IXTs Wall of Radios">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+  <h2>Hallicrafters S-22R Radio</h2>
+  <h2>Years of Production: 1940–1946</h2>
+  <h3>Overview</h3>
+  <p>The Hallicrafters S-22R, also known as the Skyrider Marine, was a commercial receiver designed for maritime use. It was built to operate on both AC and DC power, making it suitable for shipboard service where 110 VDC power was common.</p>
+  
+  <h3>Technical Specifications</h3>
+  <ul>
+    <li>Number of Tubes: 8</li>
+    <li>Tube Types: 6SK7, 6K8, 6SK7, 6SK7, 6SQ7, 25L6, 6J5, 25Z5</li>
+    <li>Main Principle: Superheterodyne with RF-stage; IF frequency 1600 kHz</li>
+    <li>Tuned Circuits: 9 AM circuits</li>
+    <li>Wave Bands: Broadcast, Long Wave, and 2 x Short Wave</li>
+    <li>Frequency Coverage: 0.110-0.410 MHz, 0.400-1.5 MHz, 1.7-5.9 MHz, 5.3-18 MHz (with a reception gap from 1500-1700 kHz)</li>
+    <li>Power Type and Voltage: AC/DC, 117 Volt</li>
+    <li>Loudspeaker: Permanent Magnet Dynamic (PDyn), 5-inch diameter</li>
+    <li>Power Output: 2.5 W</li>
+    <li>Material: Metal case</li>
+    <li>Dimensions: 18.5 x 8.5 x 9.38 inches (470 x 216 x 238 mm)</li>
+    <li>Weight: 26 lbs 1.6 oz (11.850 kg)</li>
+  </ul>
+  
+  <h3>Notable Features</h3>
+  <p>The S-22R was designed with maritime needs in mind, featuring a frequency range that covered essential maritime communication bands. Its robust construction and ability to operate on both AC and DC power made it a reliable choice for shipboard use.</p>
+  
+  <h3>Historical Context</h3>
+  <p>The Hallicrafters S-22R was produced during a time when maritime communication was crucial, especially during World War II. Its design reflects the technological advancements and practical needs of that era.</p>    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
