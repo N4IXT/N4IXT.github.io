@@ -42,7 +42,7 @@ On this site I hope to document all of the radios in my collection. In part as I
   </div>
 
   <script>
-    fetch('menu.html')
+    fetch('.\menu.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('menu-content').innerHTML = data;
