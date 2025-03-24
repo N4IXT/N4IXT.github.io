@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .main {
+      display: flex;
+      width: 100%;
+    }
+    .menu {
+      width: 20%;
+      padding: 10px;
+      background-color: #f4f4f4;
+    }
+    .content {
+      width: 80%;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters SX-110</h1>
+    <a href="sx-110.jpg" target="_blank">
+      <img src="sx-110.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters SX-110">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters SX-110</h2>
+      <h3>Years of Production: 1959-1965</h3>
+      <p>The Hallicrafters SX-110 is a communications receiver designed for amateur radio enthusiasts. It covers a wide frequency range and offers several advanced features for its time.</p>
+      <p>Technical Specifications:</p>
+      <ul>
+          <li>Frequency Range: 0.538-1.6, 1.55-4.6, 4.6-13, 12-34 MHz</li>
+          <li>Modulation: AM</li>
+          <li>Receiver System: Superheterodyne</li>
+          <li>IF Frequency: 455 kHz</li>
+          <li>Audio Output: 2 W</li>
+          <li>Power Requirements: 105-125 Volt AC</li>
+          <li>Number of Tubes: 8</li>
+          <li>Wave Bands: Broadcast and multiple shortwave bands</li>
+          <li>Price in First Year of Sale: $160.00</li>
+      </ul>
+      <p>Notable Features:</p>
+      <ul>
+          <li>Superheterodyne principle with a crystal filter for improved selectivity</li>
+          <li>Permanent Magnet Dynamic (PDyn) Loudspeaker for enhanced audio quality</li>
+          <li>Metal case for durability</li>
+          <li>S-Meter, Antenna Trimmer, and Crystal Filter for better performance</li>
+      </ul>
+      <p>Historical Context:</p>
+      <p>The Hallicrafters SX-110 was produced during a period when amateur radio was experiencing significant growth. Hallicrafters was renowned for its innovative designs and high-quality craftsmanship, making the SX-110 a popular choice among radio enthusiasts. Its robust construction and reliable performance contributed to its reputation as a dependable communications receiver.</p>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

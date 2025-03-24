@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .main {
+      display: flex;
+      width: 100%;
+    }
+    .menu {
+      width: 20%;
+      padding: 10px;
+      background-color: #f4f4f4;
+    }
+    .content {
+      width: 80%;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters S-108</h1>
+    <a href="s-108.jpg" target="_blank">
+      <img src="s-108.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters S-108">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters S-40 Radio</h2>
+      <h3>Years of Production: 1946–1949</h3>
+
+      <h3>Overview</h3>
+      <p>The Hallicrafters S-40 is a general coverage short-wave receiver designed for amateur radio enthusiasts. It was introduced in 1946 and became known for its reliable performance and robust design.</p>
+
+      <h3>Technical Specifications</h3>
+      <ul>
+            <li>Number of Tubes: 9</li>
+            <li>Tube Types: 6SG7, 6SA7, 6SK7, 6SK7, 6SQ7, 6F6, 6H6, 6J5, 80</li>
+            <li>Main Principle: Superheterodyne with RF-stage; IF frequency 455 kHz</li>
+            <li>Wave Bands: Broadcast, Short Wave, and Police</li>
+            <li>Frequency Coverage: 0.54-1.7 MHz, 1.7-5.35 MHz, 5.35-15.7 MHz, 15.7-43 MHz</li>
+            <li>Power Type and Voltage: AC, 117 Volt</li>
+            <li>Loudspeaker: Permanent Magnet Dynamic (PDyn) Loudspeaker, 5-inch diameter</li>
+            <li>Power Output: 2.5 W</li>
+            <li>Material: Metal case</li>
+            <li>Dimensions: 18.5 x 9 x 11 inches (470 x 229 x 279 mm)</li>
+            <li>Weight: 28 lbs (12.7 kg)</li>
+      </ul>
+
+      <h3>Notable Features</h3>
+      <p>The S-40 includes features such as a noise limiter, CW/AM switch, and a sensitivity control. It was designed to provide reliable communication across a wide range of frequencies, making it suitable for both amateur and commercial use.</p>
+
+      <h3>Historical Context</h3>
+      <p>The Hallicrafters S-40 was produced during the post-World War II era, a time when amateur radio was gaining popularity. Its design reflects the technological advancements of the era and the needs of radio enthusiasts.</p>
+
+      <h3>N4IXT Note</h3>
+      <p>My S-108 is missing the nameplate band that went just above the two big knobs. It would have the Hallicrafters logo along with the S-108 model number.</p>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

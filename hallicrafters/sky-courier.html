@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .main {
+      display: flex;
+      width: 100%;
+    }
+    .menu {
+      width: 20%;
+      padding: 10px;
+      background-color: #f4f4f4;
+    }
+    .content {
+      width: 80%;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters </h1>
+    <a href="ht-32.jpg" target="_blank">
+      <img src="ht-32.jpg" style="max-width: 640px;" alt="N4IXTs Wall of Radios">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters Sky Courier Radio</h2>
+      <h3>Years of Production: 1942</h3>
+
+      <h3>Overview</h3>
+      <p>The Hallicrafters Sky Courier, also known as the RE-1, is a portable receiver designed for both amateur and commercial use. It was introduced in 1942 and became known for its reliable performance and robust design, especially during World War II.</p>
+
+      <h3>Technical Specifications</h3>
+      <ul>
+            <li>Number of Tubes: 7</li>
+            <li>Tube Types: 1R5, 1N5GT, 1N5GT, 1H5GT, 50L6GT, 3Q5GT, 35Z5GT</li>
+            <li>Main Principle: Superheterodyne with IF frequency 455 kHz</li>
+            <li>Wave Bands: Broadcast plus 2 Short Wave bands</li>
+            <li>Frequency Coverage: 0.54-19 MHz in 3 bands</li>
+            <li>Power Type and Voltage: Line/Batteries (AC/DC 105-120V, 67.5V, 7.5V)</li>
+            <li>Loudspeaker: Permanent Magnet Dynamic (PDyn) Loudspeaker, 4-inch diameter</li>
+            <li>Power Output: 0.08 W</li>
+            <li>Material: Metal case</li>
+            <li>Dimensions: 8 x 8 x 8 inches (203 x 203 x 203 mm)</li>
+            <li>Weight: 10 lbs (4.5 kg)</li>
+      </ul>
+
+      <h3>Notable Features</h3>
+      <p>The Sky Courier was designed to be a portable set, usable without mains power. It was often used as a troop entertainer and morale booster during World War II. The receiver could operate on various power sources, including line and batteries, making it versatile for different environments.</p>
+
+      <h3>Historical Context</h3>
+      <p>The Hallicrafters Sky Courier was produced during World War II, a time when reliable and portable communication equipment was essential. Its robust design and performance made it a popular choice for both military and civilian use[1](https://www.radiomuseum.org/r/hallicraft_sky_courier_re_1_re1.html)[2](https://www.myantiqueradiomuseum.org/hallicrafters-radios).</p>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

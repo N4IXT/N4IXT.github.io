@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .main {
+      display: flex;
+      width: 100%;
+    }
+    .menu {
+      width: 20%;
+      padding: 10px;
+      background-color: #f4f4f4;
+    }
+    .content {
+      width: 80%;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters SX-28</h1>
+    <a href="sx-28.jpg" target="_blank">
+      <img src="sx-28.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters SX-28">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters SX-28 Radio</h2>
+      <h3>Years of Production: 1940–1946</h3>
+
+      <h3>Overview</h3>
+      <p>The Hallicrafters SX-28, also known as the Super Skyrider, is an American shortwave communications receiver that was produced between 1940 and 1946. It saw wide use by amateur radio operators, government, and military services[1](https://en.wikipedia.org/wiki/Hallicrafters_SX-28)[2](https://californiahistoricalradio.com/restorations/hallicrafters-sx-28-restoration/).</p>
+
+      <h3>Technical Specifications</h3>
+      <ul>
+            <li>Number of Tubes: 15</li>
+            <li>Tube Types: 6K7, 6L7, 6J5, 6K7, 6K7, 6H6, 6J5, 6F6, 6F6, 5Z4</li>
+            <li>Main Principle: Superheterodyne with RF-stage; IF frequency 455 kHz</li>
+            <li>Wave Bands: Broadcast and Short Wave</li>
+            <li>Frequency Coverage: 0.55-43 MHz in six bands</li>
+            <li>Power Type and Voltage: AC, 117 Volt</li>
+            <li>Loudspeaker: Requires external speaker</li>
+            <li>Power Output: 8 W</li>
+            <li>Material: Metal case</li>
+            <li>Dimensions: 19 x 10 x 12 inches (483 x 254 x 305 mm)</li>
+            <li>Weight: 50 lbs (22.7 kg)</li>
+      </ul>
+
+      <h3>Notable Features</h3>
+      <p>The SX-28 included features such as Amplified AVC, a Lamb Noise Silencer, calibrated bandspread, and push-pull audio output. It was known for its high fidelity audio, high sensitivity, stability, selectivity, and good purchase value[1](https://en.wikipedia.org/wiki/Hallicrafters_SX-28)[3](https://www.cryptomuseum.com/df/sx28/index.htm).</p>
+
+      <h3>Historical Context</h3>
+      <p>The Hallicrafters SX-28 was widely used by various branches of U.S. and allied military and intelligence agencies during World War II. It was often rack-mounted in British government listening posts for monitoring German radar and communications[1](https://en.wikipedia.org/wiki/Hallicrafters_SX-28)[3](https://www.cryptomuseum.com/df/sx28/index.htm).</p>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

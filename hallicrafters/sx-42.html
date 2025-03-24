@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .main {
+      display: flex;
+      width: 100%;
+    }
+    .menu {
+      width: 20%;
+      padding: 10px;
+      background-color: #f4f4f4;
+    }
+    .content {
+      width: 80%;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters SX-42</h1>
+    <a href="sx-42.jpg" target="_blank">
+      <img src="sx-42.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters SX-42">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters SX-42 Radio</h2>
+      <h3>Years of Production: 1946–1948</h3>
+
+      <h3>Overview</h3>
+      <p>The Hallicrafters SX-42 is a vintage communications receiver designed for both amateur and commercial use. It was introduced in 1946 and became known for its extensive band coverage and advanced features.</p>
+
+      <h3>Technical Specifications</h3>
+      <ul>
+            <li>Number of Tubes: 15</li>
+            <li>Tube Types: 6AG5, 6AG5, 7F8, 6SK7, 6SG7, 6H6, 7H7, 7H7, 6H6, 6SL7, 7A4, 6V6, 6V6, VR150, 5U4</li>
+            <li>Main Principle: Superheterodyne with RF-stage; IF frequency 455 kHz</li>
+            <li>Wave Bands: Broadcast, Short Wave, and FM</li>
+            <li>Frequency Coverage: 0.54-1.62 MHz, 1.62-5 MHz, 5-15 MHz, 15-30 MHz, 27-55 MHz, 55-110 MHz</li>
+            <li>Power Type and Voltage: AC, 105-125 Volt</li>
+            <li>Loudspeaker: Requires external speaker</li>
+            <li>Power Output: 8 W</li>
+            <li>Material: Metal case</li>
+            <li>Dimensions: 20 x 10.2 x 16 inches (508 x 259 x 406 mm)</li>
+            <li>Weight: 51 lbs 15.7 oz (23.6 kg)</li>
+      </ul>
+
+      <h3>Notable Features</h3>
+      <p>The SX-42 includes features such as a crystal filter, BFO (Beat Frequency Oscillator), six-position selectivity switch, noise limiter, and continuous FM coverage from 27 to 110 MHz. It was designed to provide reliable communication across a wide range of frequencies, making it suitable for both amateur and commercial use[2](https://www.radioworld.com/tech-and-gear/happy-memory-the-hallicrafters-sx42-communications-receiver)[1](https://www.radiomuseum.org/r/hallicraft_sx_42_sx42.html).</p>
+
+      <h3>Historical Context</h3>
+      <p>The Hallicrafters SX-42 was produced during the post-World War II era, a time when advanced communication equipment was in high demand. Its design reflects the technological advancements of the era and the needs of radio enthusiasts and professionals[2](https://www.radioworld.com/tech-and-gear/happy-memory-the-hallicrafters-sx42-communications-receiver)[1](https://www.radiomuseum.org/r/hallicraft_sx_42_sx42.html).</p>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

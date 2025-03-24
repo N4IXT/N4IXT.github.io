@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .main {
+      display: flex;
+      width: 100%;
+    }
+    .menu {
+      width: 20%;
+      padding: 10px;
+      background-color: #f4f4f4;
+    }
+    .content {
+      width: 80%;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters S-38D</h1>
+    <a href="s-38d.jpg" target="_blank">
+      <img src="s-38d.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters S-38D">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters S-38D Radio</h2>
+      <h3>Years of Production: 1954–1957</h3>
+
+      <h3>Overview</h3>
+      <p>The Hallicrafters S-38D is a general coverage receiver designed for amateur radio enthusiasts. It was introduced in late 1954 and became known for its reliable performance and affordability.</p>
+
+      <h3>Technical Specifications</h3>
+      <ul>
+        <li>Number of Tubes: 5</li>
+        <li>Tube Types: 12SA7, 12SG7, 12SQ7, 50L6, 35Z5</li>
+        <li>Main Principle: Superheterodyne with IF frequency 455 kHz</li>
+        <li>Wave Bands: Broadcast plus more than 2 Short Wave bands</li>
+        <li>Frequency Coverage: 0.54-32 MHz in 4 ranges</li>
+        <li>Power Type and Voltage: AC/DC, 117 Volt</li>
+        <li>Loudspeaker: Permanent Magnet Dynamic (PDyn) Loudspeaker, 5-inch diameter</li>
+        <li>Power Output: 1 W</li>
+        <li>Material: Metal case</li>
+        <li>Dimensions: 13 x 7 x 7.25 inches (330 x 178 x 184 mm)</li>
+        <li>Weight: 10 lbs 11 oz (4.85 kg)</li>
+      </ul>
+
+      <h3>Notable Features</h3>
+      <p>The S-38D includes features such as a BFO (Beat Frequency Oscillator) for CW (Continuous Wave) reception, a noise limiter, and a sensitivity control. It was designed to provide reliable communication across a wide range of frequencies, making it suitable for both amateur and commercial use.</p>
+
+      <h3>Historical Context</h3>
+      <p>The Hallicrafters S-38D was produced during the post-World War II era, a time when amateur radio was gaining popularity. Its design reflects the technological advancements of the era and the needs of radio enthusiasts[1](https://www.radiomuseum.org/r/hallicraft_s_38d_s38d.html)[2](https://www.eham.net/reviews/view-product?id=3656)[3](https://people.ohio.edu/postr/bapix/S38.htm).</p>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

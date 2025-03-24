@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .main {
+      display: flex;
+      width: 100%;
+    }
+    .menu {
+      width: 20%;
+      padding: 10px;
+      background-color: #f4f4f4;
+    }
+    .content {
+      width: 80%;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters SR-160</h1>
+    <a href="sr-160.jpg" target="_blank">
+      <img src="sr-160.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters SR-160">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters SR-160 Radio</h2>
+      <h3>Years of Production: 1961–1963</h3>
+
+      <h3>Overview</h3>
+      <p>The Hallicrafters SR-160 is a vintage amateur radio transceiver designed for use on the 80, 40, and 20 meter HAM bands. It was introduced in 1961 and became known for its reliable performance and robust design.</p>
+
+      <h3>Technical Specifications</h3>
+      <ul>
+            <li>Number of Tubes: 16</li>
+            <li>Tube Types: 12AW6, 12BE6, 12BZ6, 6EA8, 12AX7A, 6AQ5A, 12AU6, 12AT7, 12AT7, 6AM8A, 12BE6, 6EA8, 12BE6, 12BY7A, 12DQ6B, 12DQ6B, 0A2</li>
+            <li>Main Principle: Superheterodyne with RF-stage; IF frequency 5200 kHz</li>
+            <li>Wave Bands: 80, 40, and 20 meters HAM bands</li>
+            <li>Power Type and Voltage: Powered by external power supply or main unit, 117/12 Volt</li>
+            <li>Loudspeaker: Requires external speaker</li>
+            <li>Power Output: 150 watts P.E.P. SSB, 125 watts CW</li>
+            <li>Material: Metal case</li>
+            <li>Dimensions: 13 x 6.4 x 11 inches (330 x 163 x 279 mm)</li>
+            <li>Weight: 13 lbs 3.5 oz (6 kg)</li>
+      </ul>
+
+      <h3>Notable Features</h3>
+      <p>The SR-160 includes features such as RIT (Receiver Incremental Tuning), AALC (Automatic Audio Level Control), VFO (Variable Frequency Oscillator), VOX (Voice Operated Exchange, optional with HA-16), a crystal lattice filter, and S- and RF-meters. It also has provisions for a 100 kHz crystal calibrator.</p>
+
+      <h3>Historical Context</h3>
+      <p>The Hallicrafters SR-160 was produced during a time when amateur radio was gaining popularity. Its design reflects the technological advancements of the era and the needs of radio enthusiasts. The SR-160 was part of Hallicrafters' efforts to provide high-quality, reliable equipment for amateur radio operators[1](https://www.manualslib.com/manual/792508/Hallicrafters-Sr-160.html)[2](https://www.radiomuseum.org/r/hallicraft_sr_160_sr160.html)[3](https://www.manualslib.com/manual/791675/Hallicrafters-Sr-160.html).</p>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

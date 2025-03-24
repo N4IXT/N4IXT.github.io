@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .main {
+      display: flex;
+      width: 100%;
+    }
+    .menu {
+      width: 20%;
+      padding: 10px;
+      background-color: #f4f4f4;
+    }
+    .content {
+      width: 80%;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters Sky Buddy II</h1>
+    <a href="sky-buddy-ii.jpg" target="_blank">
+      <img src="sky-buddy-ii.jpg" style="max-width: 640px;" alt="N4IXTs Sky Buddy II">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters Sky Buddy II Radio</h2>
+      <h3>Years of Production: 1961–1964</h3>
+
+      <h3>Overview</h3>
+      <p>The Hallicrafters Sky Buddy II, also known as the S-119, is a general coverage receiver designed for amateur radio enthusiasts. It was introduced in 1961 and became known for its reliable performance and affordability.</p>
+
+      <h3>Technical Specifications</h3>
+      <ul>
+            <li>Number of Tubes: 3</li>
+            <li>Tube Types: 6BE6, 6BA6, 6CM6</li>
+            <li>Main Principle: Superheterodyne with IF frequency 455 kHz</li>
+            <li>Wave Bands: Broadcast plus 2 Short Wave bands</li>
+            <li>Frequency Coverage: 0.535-1.64 MHz, 2-5.5 MHz, 6-16.4 MHz</li>
+            <li>Power Type and Voltage: AC, 105-125 Volt</li>
+            <li>Loudspeaker: Permanent Magnet Dynamic (PDyn) Loudspeaker, 4-inch diameter</li>
+            <li>Power Output: 1 W</li>
+            <li>Material: Metal case</li>
+            <li>Dimensions: 10.5 x 7.5 x 5 inches (267 x 191 x 127 mm)</li>
+            <li>Weight: 7 lbs 14.9 oz (3.6 kg)</li>
+      </ul>
+
+      <h3>Notable Features</h3>
+      <p>The Sky Buddy II includes features such as a regenerative IF for BFO (Beat Frequency Oscillator), a built-in ferrite bar antenna for the broadcast band, and the option to be purchased as a kit (model S-119K). It was designed to provide reliable communication across a wide range of frequencies, making it suitable for both amateur and commercial use.</p>
+
+      <h3>Historical Context</h3>
+      <p>The Hallicrafters Sky Buddy II was produced during a time when amateur radio was gaining popularity. Its design reflects the technological advancements of the era and the needs of radio enthusiasts. It was the final model in the "Sky Buddy" series, which began with the model 5T in 1935 and continued with the S-19 and S-19R introduced in 1938 and 1939[1](https://www.radiomuseum.org/r/hallicraft_sky_buddy_ii_s_119_s119.html)[2](https://people.ohio.edu/postr/bapix/Hal_S119.htm).</p>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
