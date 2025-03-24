@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .main {
+      display: flex;
+      width: 100%;
+    }
+    .menu {
+      width: 20%;
+      padding: 10px;
+      background-color: #f4f4f4;
+    }
+    .content {
+      width: 80%;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs RCA Radiola Regenoflex</h1>
+    <a href="radiola-regenoflex.jpg" target="_blank">
+      <img src="radiola-regenoflex.jpg" style="max-width: 640px;" alt="N4IXTs RCA Radiola Regenoflex">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>RCA Radiola Regenoflex Radio</h2>
+      <h3>Years of Production: 1924</h3>
+      <p><strong>Technical Specifications:</strong></p>
+      <ul>
+          <li>Number of Tubes: 4</li>
+          <li>Tube Types: WD-11</li>
+          <li>Main Principle: TRF (Tuned Radio Frequency) with regeneration</li>
+          <li>Wave Bands: Broadcast only (MW)</li>
+          <li>Power Type and Voltage: Dry batteries</li>
+          <li>Dimensions: 17 x 7.5 x 8.6 inches (432 x 191 x 218 mm)</li>
+          <li>Material: Wooden case</li>
+      </ul>
+      <p><strong>Notable Features:</strong></p>
+      <ul>
+          <li>Two primary tuning control knobs</li>
+          <li>External speaker or headphones required</li>
+          <li>Tuned circuits: 1 AM circuit</li>
+          <li>Coverage: 180 to 550 meters</li>
+      </ul>
+      <p><strong>Historical Context:</strong></p>
+      <p>The RCA Radiola Regenoflex, also known as the Radiola AR-817, was introduced in 1924. It was a variation of the Radiola X, housed in a more affordable cabinet. The Regenoflex utilized the TRF (Tuned Radio Frequency) principle with regeneration, which was a common design in early radio technology. Priced at $150.00, it was aimed at radio enthusiasts and early adopters of radio technology. The Regenoflex played a significant role in the early days of broadcast radio, helping to popularize radio listening in the United States.</p>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

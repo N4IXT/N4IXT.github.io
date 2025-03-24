@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .main {
+      display: flex;
+      width: 100%;
+    }
+    .menu {
+      width: 20%;
+      padding: 10px;
+      background-color: #f4f4f4;
+    }
+    .content {
+      width: 80%;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs RCA Collection</h1>
+    <a href="rca-logo-1922.jpg" target="_blank">
+      <img src="rca-logo-1922.jpg" style="max-width: 640px;" alt="N4IXTs RCA Logo">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+<h3>Overview of RCA Corporation</h3>
+<p>The Radio Corporation of America (RCA) was an American electronics company founded in 1919. It played a pivotal role in the development of radio, television, and other communication technologies throughout the 20th century. RCA was a major force in the broadcasting industry and contributed significantly to the music and consumer electronics markets.</p>
+
+<h3>Key Milestones</h3>
+<ul>
+    <li><strong>1919:</strong> Founded as the Radio Corporation of America (RCA) from the assets of the Marconi Wireless Telegraph Company of America.</li>
+    <li><strong>1926:</strong> Acquired AT&T's radio stations and network operations, forming the National Broadcasting Company (NBC).</li>
+    <li><strong>1929:</strong> Purchased the Victor Talking Machine Company, creating RCA Victor.</li>
+    <li><strong>1939:</strong> Demonstrated the first all-electronic black-and-white television system at the New York World's Fair.</li>
+    <li><strong>1954:</strong> Introduced the world's first consumer color television.</li>
+    <li><strong>1986:</strong> Acquired by General Electric (GE), leading to the sale and liquidation of various divisions.</li>
+</ul>
+
+<h3>Notable Products</h3>
+<ul>
+    <li>Radios: Early superheterodyne radio receivers.</li>
+    <li>Televisions: Pioneered both black-and-white and color television technologies.</li>
+    <li>Phonographs: RCA Victor's phonographs and records, including the iconic "Victrola" line.</li>
+    <li>Videodisc Systems: Developed the CED (Capacitance Electronic Disc) videodisc system.</li>
+    <li>Broadcast Equipment: Studio cameras, videotape machines, and TV transmitters.</li>
+</ul>
+
+<h3>Historical Context</h3>
+<p>RCA was a major force in the development of the electronics and communications industries in the United States. Initially a patent trust owned by GE, Westinghouse, AT&T, and United Fruit Company, RCA became an independent company in 1932 following an antitrust settlement. Under the leadership of David Sarnoff, RCA was instrumental in the commercialization of radio broadcasting and the development of television. The company also played a significant role in the music industry through RCA Victor.</p>
+
+<h3>Legacy</h3>
+<p>RCA's innovations in radio and television set the stage for modern broadcasting and home entertainment. The company's contributions to the music industry and consumer electronics have left a lasting impact. Despite its decline and eventual acquisition by GE, RCA's legacy endures through its technological advancements and iconic brand.</p>  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

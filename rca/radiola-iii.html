@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .main {
+      display: flex;
+      width: 100%;
+    }
+    .menu {
+      width: 20%;
+      padding: 10px;
+      background-color: #f4f4f4;
+    }
+    .content {
+      width: 80%;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs RCA Radiola III</h1>
+    <a href="radiola-iii.jpg" target="_blank">
+      <img src="radiola-iii.jpg" style="max-width: 640px;" alt="N4IXTs RCA Radiola III">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>RCA Radiola III Radio</h2>
+      <h3>Years of Production: 1924-1926</h3>
+      <p><strong>Technical Specifications:</strong></p>
+      <ul>
+          <li>Number of Tubes: 2</li>
+          <li>Tube Types: WD-11</li>
+          <li>Main Principle: TRF (Tuned Radio Frequency) with regeneration</li>
+          <li>Wave Bands: Broadcast only (MW)</li>
+          <li>Power Type and Voltage: Dry batteries</li>
+          <li>Dimensions: 7.9 x 5.9 x 6.7 inches (200 x 150 x 170 mm)</li>
+          <li>Material: Wooden case</li>
+      </ul>
+      <p><strong>Notable Features:</strong></p>
+      <ul>
+          <li>External speaker or headphones required</li>
+          <li>Tuned circuits: 1 AM circuit</li>
+          <li>Coverage: 180 to 550 meters</li>
+      </ul>
+      <p><strong>Historical Context:</strong></p>
+      <p>The RCA Radiola III was introduced in 1924 as an affordable and compact radio receiver. It was designed for use with headphones or an external amplifier, making it accessible to a wider audience. The Radiola III utilized the TRF (Tuned Radio Frequency) principle with regeneration, which was a common design in early radio technology. Priced at $35.00, it became popular among radio enthusiasts and helped to further popularize radio listening in the United States.</p>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
