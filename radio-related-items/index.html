@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .main {
+      display: flex;
+      width: 100%;
+    }
+    .menu {
+      width: 20%;
+      padding: 10px;
+      background-color: #f4f4f4;
+    }
+    .content {
+      width: 80%;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Radio Extravaganza</h1>
+    <a href="office.jpg" target="_blank">
+      <img src="office.jpg" style="max-width: 640px;" alt="N4IXTs Wall of Radios">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+    <h2>Hello</h2>
+    <p>Hi, I'm Robert, N4IXT. I'm a ham radio operator, and very interested in the history of radio, both amateur and broadcast.</p>
+
+<p>As you can see, I have a large collection of antique radios. The majority are Hallicrafters, in addition I have some early RCA and Atwater Kent, plus a few other miscellaneous radios.</p>
+
+<p>I also have a rather large collection of vintage books related to radio. Some historical and many, many technical.</p>
+
+<p>Right now I have at least one of every issue of the ARRL Handbook, going back to the very first one from 1926. I have all of the "West Coast" handbooks, almost all the QSTs, and many other magazines.</p>
+
+<p>On this site I hope to document all of the radios in my collection. In part as I want to share with other collectors, but additionally it's gotten to where I need a good way to keep track of what I have.</p>
+
+<p>This site is a work in progress. What you see here is a small part of my collection. More will come as I am able to find the time. I will also admit some of the pics are not the best in the world, as time permits I will be updating some photos with ones taken in better lighting and background.</p>
+
+<p>Note, this is not a "for sale" site, none of the radios in my collection are currently for sale.</p>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

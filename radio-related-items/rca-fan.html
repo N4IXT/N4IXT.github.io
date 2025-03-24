@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .main {
+      display: flex;
+      width: 100%;
+    }
+    .menu {
+      width: 20%;
+      padding: 10px;
+      background-color: #f4f4f4;
+    }
+    .content {
+      width: 80%;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs RCA Hand Fan</h1>
+    <a href="rca-fan-front.jpg" target="_blank">
+      <img src="yyy.jpg" style="max-width: 640px;" alt="N4IXTs RCA Hand Fan">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+<h2>RCA Dealer Fans from 1934</h2>
+<p>RCA (Radio Corporation of America) often distributed promotional items to radio dealers to help market their products. One such item was the hand-held fan, which was both a practical tool and an advertising medium. These fans typically featured the RCA logo and various designs that highlighted the company's innovations and the diverse content available on the radio.</p>
+
+<h3>Details of Your RCA Fan</h3>
+<p>Your fan, dating from around 1934, features the RCA logo over a vacuum tube, symbolizing the technological advancements of the era. The eight round circles surrounding the logo depict different activities that could be enjoyed via radio, such as music, news, sports, and entertainment. This design was intended to showcase the versatility and appeal of radio programming.</p>
+
+<h3>James S. Balthaser</h3>
+<p>The name "James S. Balthaser" on the back of the fan indicates that it was distributed by his company, which had locations in Hyde Villa, Reading, PA, and Hamburg, PA. James S. Balthaser was a notable figure in the radio and music retail industry during the early 20th century. He opened a new store in Hyde Villa, which attracted significant attention and visitors during its opening ceremonies[1](https://www.worthpoint.com/worthopedia/rca-radio-adv-sign-fan-1920s-2021663745).</p>
+
+<h3>Historical Significance</h3>
+<p>RCA dealer fans from this period are valuable collectibles today, representing a unique blend of advertising and practical use. They provide a glimpse into the marketing strategies of the time and the early days of radio broadcasting. The inclusion of James S. Balthaser's name adds an extra layer of historical interest, connecting the fan to a specific dealer and location.</p>
+
+<h3>James S. Balthaser's Company</h3>
+<p>James S. Balthaser was involved in various business ventures, including the Community Auction House in Hamburg, PA, which was active from 1932[2](https://elibrary.arcade-museum.com/magazines/mtr/MTR-1928-87-11/MTR-1928-87-11-13.pdf). His contributions to the radio and music retail industry were significant, and his name on the fan indicates his role in promoting RCA products during that era.</p>  
+</div>
+  <div class="header">
+    <h2>N4IXTs RCA Hand Fan Other Images</h2>
+    <a href="rca-fan-back.jpg" target="_blank">
+      <img src="rca-fan-back.jpg" style="max-width: 640px;" alt="N4IXTs RCA Hand Fan">
+    </a>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .main {
+      display: flex;
+      width: 100%;
+    }
+    .menu {
+      width: 20%;
+      padding: 10px;
+      background-color: #f4f4f4;
+    }
+    .content {
+      width: 80%;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Marconi Stock Certificate</h1>
+    <a href="marconi-stock-front.jpg" target="_blank">
+      <img src="marconi-stock-front.jpg" style="max-width: 640px;" alt="N4IXTs Marconi Stock Certificate">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+<h2>Marconi Wireless Telegraph Company Stock Certificate</h2>
+<p>I acquired this stock certificate from a seller on eBay. It makes for a great display piece and memento of the early days of the telecommunications industry.</p>
+
+<h3>The Marconi Wireless Telegraph Company</h3>
+<p>The Marconi Wireless Telegraph Company, founded by Guglielmo Marconi in 1897, was a pioneer in wireless communication. The company was originally named the Wireless Telegraph and Signal Company and was renamed in 1900. Marconi's company made the first trans-Atlantic radio transmissions in 1901-02.</p>
+
+<h3>Stock Certificate Details</h3>
+<p>This stock certificate, issued on January 27, 1913, and cancelled on March 23, 1920, represents a piece of this pioneering company's history. The certificate was issued to "Heybourn & Croft."</p>
+
+<h3>Reason for Cancellation</h3>
+<p>The cancellation of Marconi Wireless Telegraph Company stock certificates around this period was likely due to the U.S. government's actions during and after World War I. The U.S. Navy seized the assets of the British Marconi Wireless Telegraph Co. to keep radio technology in American hands. These assets were assigned to the newly-formed Radio Corporation of America (RCA) in 1919[1](https://www.ebay.com/shop/marconi-telegraph?_nkw=marconi+telegraph)[2](https://www.ebay.com/itm/305538220537).</p>
+
+<h3>Heybourn & Croft</h3>
+<p>Unfortunately, there is limited information available about "Heybourn & Croft." They were likely investors or brokers involved in the stock market during that era. The stock certificate issued to them is a testament to their involvement in the early days of wireless communication technology[3](https://www.christies.com/en/lot/lot-4440540).</p>
+
+<h3>Historical Significance</h3>
+<p>Marconi Wireless Telegraph Company stock certificates are valuable collectibles today, representing a significant period in the history of communication technology. The certificates often feature intricate designs and are sought after by collectors[4](https://collections.carli.illinois.edu/digital/collection/uis_msc/id/208/).</p>
+  </div>
+
+  <div class="header">
+    <h2>N4IXTs Marconi Stock Certificate Other Images</h2>
+    <a href="marconi-stock-back.jpg" target="_blank">
+      <img src="marconi-stock-back.jpg" style="max-width: 640px;" alt="N4IXTs Marconi Stock Certificate">
+    </a>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
