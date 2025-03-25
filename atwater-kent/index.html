@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Atwater Kent Collection</h1>
+    <a href="atwater-kent-sign.jpg" target="_blank">
+      <img src="atwater-kent-sign.jpg" style="max-width: 640px;" alt="N4IXTs Atwater Kent Collection">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Atwater Kent Corporation</h2>
+      <h3>Overview</h3>
+      <p>The Atwater Kent Radio Corporation was founded by Arthur Atwater Kent Sr. in Philadelphia. Initially, the company focused on manufacturing automobile ignition systems before transitioning to radio production in the early 1920s. Atwater Kent quickly became a leading name in the radio industry, known for its high-quality products and innovative designs.</p>
+
+      <h3>Key Milestones</h3>
+      <ul>
+        <li><strong>1921:</strong> Atwater Kent produced its first radio components, selling do-it-yourself kits[1](https://en.wikipedia.org/wiki/A._Atwater_Kent).</li>
+        <li><strong>1923:</strong> The company started producing complete radio sets, introducing the Model 10[1](https://en.wikipedia.org/wiki/A._Atwater_Kent).</li>
+        <li><strong>1924:</strong> A new $2 million plant was built in North Philadelphia[1](https://en.wikipedia.org/wiki/A._Atwater_Kent).</li>
+        <li><strong>1925:</strong> Atwater Kent became the largest maker of radios in the United States[1](https://en.wikipedia.org/wiki/A._Atwater_Kent).</li>
+        <li><strong>1926-1934:</strong> Sponsored "The Atwater Kent Hour," a popular radio concert music program[1](https://en.wikipedia.org/wiki/A._Atwater_Kent)[2](https://newenglandhistoricalsociety.com/atwater-kent-vermonter-sparked-radio-craze-1921/).</li>
+        <li><strong>1929:</strong> At its peak, the company employed over 12,000 workers and produced nearly one million radio sets[1](https://en.wikipedia.org/wiki/A._Atwater_Kent)[3](https://www.worthpoint.com/dictionary/p/tools/manufacturers-vintage/atwater-kent-radio).</li>
+        <li><strong>1936:</strong> The company ceased radio production due to declining sales and union organization attempts[3](https://www.worthpoint.com/dictionary/p/tools/manufacturers-vintage/atwater-kent-radio).</li>
+      </ul>
+
+      <h3>Notable Products</h3>
+      <ul>
+        <li><strong>Model 5:</strong> Introduced in 1921 as a promotional tool[1](https://en.wikipedia.org/wiki/A._Atwater_Kent).</li>
+        <li><strong>Model 10:</strong> Launched in 1923, marking the company's entry into complete radio sets[1](https://en.wikipedia.org/wiki/A._Atwater_Kent).</li>
+        <li><strong>Model 57:</strong> A metal-cabinet seven-tube radio priced at $105[1](https://en.wikipedia.org/wiki/A._Atwater_Kent).</li>
+        <li><strong>Model 60:</strong> A wooden-cabinet eight-tube radio priced at $80[1](https://en.wikipedia.org/wiki/A._Atwater_Kent).</li>
+      </ul>
+
+      <h3>Historical Context</h3>
+      <p>Atwater Kent's rise coincided with the explosion of commercial radio in the early 1920s. By 1922, over 600 radio stations were operating, creating a chaotic yet exciting market. Atwater Kent leveraged his manufacturing experience and facilities to produce high-quality radios that captivated consumers[2](https://newenglandhistoricalsociety.com/atwater-kent-vermonter-sparked-radio-craze-1921/). The company's success was further bolstered by its sponsorship of popular radio programs, which helped establish its brand as a household name[2](https://newenglandhistoricalsociety.com/atwater-kent-vermonter-sparked-radio-craze-1921/).</p>
+
+      <h3>Legacy</h3>
+      <p>Although Atwater Kent ceased radio production in 1936, its legacy lives on. The radios produced by the company are highly prized by collectors and fetch premium prices[4](https://www.wshu.org/vintage-radio/2014-11-18/atwater-kent). The company's contributions to the radio industry, including its innovative designs and sponsorship of popular programs, have left a lasting impact on the history of broadcasting[1](https://en.wikipedia.org/wiki/A._Atwater_Kent)[2](https://newenglandhistoricalsociety.com/atwater-kent-vermonter-sparked-radio-craze-1921/).</p>
+
+      <h3>N4IXTs Collection</h3>
+      <p>All of the radios shown here are from my personal collection.</p>
+      <p>Click on the model number in the menu on the left to learn more about a specific radio and see images of it.</p>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
