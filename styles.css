@@ -7,8 +7,8 @@ body {
   text-align: center;
   background-color: black; /* Sets the background color to black */
   color: white; /* Sets the text color to white */
-  margin-bottom: 20px;
-  margin-top: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 .main {
   display: flex;
