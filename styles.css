@@ -6,6 +6,8 @@
       width: 100%;
       text-align: center;
       margin-bottom: 20px;
+      background-color: black; /* Sets the background color to black */
+      color: white; /* Sets the text color to white */
     }
     .main {
       display: flex;
@@ -19,4 +21,10 @@
     .content {
       width: 80%;
       padding: 10px;
+    }
+    .footer {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 20px;
     }
