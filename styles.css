@@ -5,7 +5,6 @@
     .header {
       width: 100%;
       text-align: center;
-      margin-bottom: 20px;
       background-color: black; /* Sets the background color to black */
       color: white; /* Sets the text color to white */
     }
@@ -16,7 +15,9 @@
     .menu {
       width: 20%;
       padding: 10px;
-      background-color: #f4f4f4;
+      background-color: black; /* Sets the background color to black */
+      color: white; /* Sets the text color to white */
+      /* background-color: #f4f4f4;*/
     }
     .content {
       width: 80%;
