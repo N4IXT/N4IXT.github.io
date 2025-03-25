@@ -1,31 +1,50 @@
-    body {
-      display: flex;
-      flex-direction: column;
-    }
-    .header {
-      width: 100%;
-      text-align: center;
-      background-color: black; /* Sets the background color to black */
-      color: white; /* Sets the text color to white */
-    }
-    .main {
-      display: flex;
-      width: 100%;
-    }
-    .menu {
-      width: 20%;
-      padding: 10px;
-      background-color: black; /* Sets the background color to black */
-      color: white; /* Sets the text color to white */
-      /* background-color: #f4f4f4;*/
-    }
-    .content {
-      width: 80%;
-      padding: 10px;
-    }
-    .footer {
-      width: 100%;
-      text-align: center;
-      margin-bottom: 20px;
-      margin-top: 20px;
+body {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  width: 100%;
+  text-align: center;
+  background-color: black; /* Sets the background color to black */
+  color: white; /* Sets the text color to white */
+}
+.main {
+  display: flex;
+  width: 100%;
+}
+.menu {
+  width: 20%;
+  padding: 10px;
+  background-color: black; /* Sets the background color to black */
+  color: white; /* Sets the text color to white */
+
+   /* background-color: #f4f4f4;*/
+}
+/* Normal state */
+.menu a {
+  color: white; /* Sets the color of the hyperlink text to white */
+}
+/* Hover state */
+.menu a:hover {
+  color: white; /* Sets the color when the mouse hovers over the link to white */
+}
+
+/* Visited state */
+.menu a:visited {
+  color: yellow; /* Sets the color of the link after it has been visited to yellow */
+}
+
+/* Active state */
+.menu a:active {
+  color: green; /* Sets the color when the link is being clicked to green */
+}
+.content {
+  width: 80%;
+  padding: 10px;
+}
+.footer {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
     }
