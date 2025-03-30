@@ -9,6 +9,8 @@ body {
   color: white; /* Sets the text color to white */
   padding-bottom: 20px;
   padding-top: 20px;
+  border-top: 5px solid red;
+  border-bottom: 5px solid red;
 }
 .main {
   display: flex;

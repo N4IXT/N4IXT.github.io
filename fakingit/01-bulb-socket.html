@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Bulb Assembly</h1>
+    <a href="01.1-bulb-socket.jpg" target="_blank">
+      <img src="01.1-bulb-socket.jpg" style="max-width: 640px;" alt="N4IXTs Bulb Assembly">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h3>The Components</h3>
+      <p>In the image at the top, you see the basic components needed to assemble a socket to hold your WiFi bulb.</p>
+      <div class="footer">
+        <a href="01.2-assembly.jpg" target="_blank">
+          <img src="01.2-assembly.jpg" style="max-width: 640px;" alt="Assembling the bulb">
+        </a>
+        <p>Description</p>
+        <p>&nbsp;</p>
+        <a href="01.3-snap-together.jpg" target="_blank">
+          <img src="01.3-snap-together.jpg" style="max-width: 640px;" alt="Snapping the socket together">
+        </a>
+        <p>Snap together</p>
+        <p>&nbsp;</p>
+        <a href="01.4-cord-switch.jpg" target="_blank">
+          <img src="01.4-cord-switch.jpg" style="max-width: 640px;" alt="Optional code switch">
+        </a>
+        <p>Optional the cord switch</p>
+        <p>&nbsp;</p>
+        <a href="01.5-the-bulb.jpg" target="_blank">
+          <img src="01.5-the-bulb.jpg" style="max-width: 640px;" alt="The Bulb">
+        </a>
+        <p>I use a VocoLinc bulb</p>
+        <p>&nbsp;</p>
+        <a href="01.6-mac-address.jpg" target="_blank">
+          <img src="01.6-mac-address.jpg" style="max-width: 640px;" alt="The MAC Address">
+        </a>
+        <p>Note down the last six digits of the MAC address</p>
+        <p>&nbsp;</p>
+        <a href="01.7-bulb-code.jpg" target="_blank">
+          <img src="01.7-bulb-code.jpg" style="max-width: 640px;" alt="The Bulbs Pass Code">
+        </a>
+        <p>Finally note down the pass code for the bulb.</p>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

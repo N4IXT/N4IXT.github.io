@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Faking It!</h1>
+    <a href="../office.jpg" target="_blank">
+      <img src="../office.jpg" style="max-width: 640px;" alt="N4IXTs Wall of Radios">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+    <h2>Looking Good</h2>
+    <p>Looking at my array of radios, you will probably be impressed seeing them all lit up and working. But are they?fu</p>
+
+    <p>I have a confession, only about a third of my radios are actually functional. The rest are ones I plan to fix up "one day". There's also the power considerations, firing up a room full of radios will put a considerable strain on my houses power.</p>
+
+    <p>On the other hand, I didn't want to have a room full of radios just sitting there, I wanted them to light up and look cool. So how to do that?</p>
+
+    <p>Well, you fake it of course!</p>
+
+    <p>In this section you'll find some tips and tricks on how to make your radios look functional, and even sound functional, and you can control all the smoke and mirrors with your phone.</p>
+
+    <h3>The Basics</h3>
+
+    <p>Perhaps I went a bit overboard, but I got the best results using WiFi controlled light bulbs and light strips, along with some WiFi controlled plugs. Using some basic components I created a holder for my bulbs which fit into my various radios. </p>
+
+    <p>Ready to learn more? Great, start with the menu over at the left. You can start at the top and work your way down, but I broke these instructions into multiple posts to make it easier to refer back to later. Along the way I'll include links to the items I used.</p>
+
+    <h3>Your Milage May Vary</h3>
+
+    <p>Keep one thing in mind as you follow along. I am an Apple guy, so needed to select hardware and software compatible with Apple Homekit. Apple Homekit allows me to create scenes and automations with multiple items at the same time.</p>
+
+    <p>For example, when I arrive home my phone detects it, and turns on multiple lights in my house. Very handy when coming home late at night! I should mention I use these lights throughout my house, not just for my radios.</p>
+
+    <p>So, if you are an Android user, you may need to find different hardware and software to accomplish the same thing. I can't help you with that, nor can I provide user support for any of the products I mention. Hopefully though these pages will give you some ideas.</p>
+
+    <p>Finally, and I can't say this strongly enough, you follow these instructions at your own risk. If you miswire something and burn down your house <b>I accept no responsibility. Proceed at your own risk!</b></p>
+
+    <p>OK, jump in and have fun.</p>
+
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
