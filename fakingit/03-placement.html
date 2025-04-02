@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Placing Your Bulb</h1>
+    <a href="03.1-placement.jpg" target="_blank">
+      <img src="03.1-placement.jpg" style="max-width: 640px;" alt="Placing Your Bulb - Step 1">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <p>As you can see, all you have to do is place your bulb inside the radio in a spot that will allow it to illuminate the window or shine through the dial(s). Simply move the blub around until you are happy with the effect.</p>>
+
+  <div class="footer">
+    <a href="03.2-placement.jpg" target="_blank">
+      <img src="03.2-placement.jpg" style="max-width: 640px;" alt="Placing Your Bulb - Step 2">
+    </a>
+    <p>Placing Your Bulb - Step 2</p>
+    <p>&nbsp;</p>
+    <a href="03.3-placement.jpg" target="_blank">
+      <img src="03.3-placement.jpg" style="max-width: 640px;" alt="Placing Your Bulb - Step 3">
+    </a>
+    <p>Placing Your Bulb - Step 3</p>
+    <p>&nbsp;</p>
+    <a href="03.4-placement.jpg" target="_blank">
+      <img src="03.4-placement.jpg" style="max-width: 640px;" alt="Placing Your Bulb - Step 4">
+    </a>
+    <p>Placing Your Bulb - Step 5</p>
+    <p>&nbsp;</p>
+    <a href="03.5-placement.jpg" target="_blank">
+      <img src="03.5-placement.jpg" style="max-width: 640px;" alt="Placing Your Bulb - Step 5">
+    </a>
+    <p>Placing Your Bulb - Step 5</p>
+    <p>&nbsp;</p>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

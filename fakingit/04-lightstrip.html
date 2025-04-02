@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Using LightStrips Instead of Bulbs</h1>
+    <a href="04.1-lightstrip.jpg" target="_blank">
+      <img src="04.1-lightstrip.jpg" style="max-width: 640px;" alt="LightStrips - Step 1">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+    <p>There are times when a bulb may not be the best fit for illuminating your radio. VocoLinc also makes LightStrips that are great for these situations.</p>
+    <p>Above you can see my RCA Model 60. With the lid open, it gives off a soft warm glow that you might see if the tubes were functional.</p>
+  <div class="footer">
+    <a href="04.2-lightstrip.jpg" target="_blank">
+      <img src="04.2-lightstrip.jpg" style="max-width: 640px;" alt="LightStrips - Step 2">
+    </a>
+    <p>LightStrips - Step 2</p>
+    <p>&nbsp;</p>
+    <a href="04.3-lightstrip.jpg" target="_blank">
+      <img src="04.3-lightstrip.jpg" style="max-width: 640px;" alt="LightStrips - Step 3">
+    </a>
+    <p>LightStrips - Step 3</p>
+    <p>&nbsp;</p>
+    <a href="04.4-lightstrip.jpg" target="_blank">
+      <img src="04.4-lightstrip.jpg" style="max-width: 640px;" alt="LightStrips - Step 4">
+    </a>
+    <p>LightStrips - Step 4</p>
+    <p>&nbsp;</p>
+    <a href="04.5-lightstrip.jpg" target="_blank">
+      <img src="04.5-lightstrip.jpg" style="max-width: 640px;" alt="LightStrips - Step 5">
+    </a>
+    <p>LightStrips - Step 5</p>
+    <p>&nbsp;</p>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
