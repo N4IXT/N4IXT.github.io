@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters S-53A</h1>
+    <a href="s-53a.jpg.jpg" target="_blank">
+      <img src="s-53a.jpg.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters S-53A">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters S-53A Radio</h2>
+      <h3>Years of Production: 1949 - 1954</h3>
+      <p>The Hallicrafters S-53A is a general coverage shortwave receiver designed for amateur radio enthusiasts and shortwave listeners. It was a popular model during its production years due to its affordability and solid performance.</p>
+      <h3>Technical Specifications:</h3>
+      <ul>
+        <li>Frequency Coverage: 0.54 to 54 MHz in 4 bands</li>
+        <li>Modes: AM and CW</li>
+        <li>Tubes: 8 vacuum tubes</li>
+        <li>Power Supply: 105-125V AC, 50-60 Hz</li>
+        <li>Audio Output: 3.5 watts</li>
+      </ul>
+      <h3>Notable Features:</h3>
+      <ul>
+        <li>Bandspread tuning for improved frequency resolution</li>
+        <li>Built-in speaker</li>
+        <li>Compact and lightweight design</li>
+        <li>Simple and user-friendly controls</li>
+      </ul>
+      <h3>Historical Context:</h3>
+      <p>Introduced in the post-World War II era, the Hallicrafters S-53A was designed to cater to the growing interest in amateur radio and shortwave listening. It was an affordable option for hobbyists and provided reliable performance for its time. The S-53A is still appreciated by collectors and vintage radio enthusiasts for its historical significance and classic design.</p>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

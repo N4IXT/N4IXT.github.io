@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Echophone EC-1A</h1>
+    <a href="echophone-ec-1a.jpg" target="_blank">
+      <img src="echophone-ec-1a.jpg" style="max-width: 640px;" alt="N4IXTs Echophone EC-1A">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+    <h2>Echophone EC-1A</h2>
+    <h3>Years of Production: 1940s</h3>
+    <p>The Echophone EC-1A is a vintage shortwave receiver that was popular during the 1940s. It was designed as an affordable and compact radio for amateur radio enthusiasts and shortwave listeners.</p>
+    <p>In 1939, the Hallicrafters Company purchased the Echophone Radio Corporation. This acquisition allowed Hallicrafters to expand its product line and offer more affordable radios, such as the Echophone EC-1A, to a broader audience. As such the Echophone radios have been included in the Hallicrafters pages.</p>
+
+    <h3>Technical Specifications</h3>
+    <ul>
+      <li>Frequency Range: Covers AM broadcast and shortwave bands</li>
+      <li>Tubes: Utilizes a 5-tube superheterodyne circuit</li>
+      <li>Power Supply: Operates on AC power</li>
+      <li>Speaker: Built-in speaker for audio output</li>
+      <li>Controls: Includes tuning, band selection, and volume controls</li>
+    </ul>
+
+    <h3>Notable Features</h3>
+    <ul>
+      <li>Compact and lightweight design for its time</li>
+      <li>Simple and user-friendly interface</li>
+      <li>Affordable price, making it accessible to a wide audience</li>
+      <li>Good sensitivity and selectivity for casual shortwave listening</li>
+    </ul>
+
+    <h3>Historical Context</h3>
+    <p>The Echophone EC-1A was produced during a time when shortwave listening was a popular hobby. It was marketed as an entry-level receiver, providing an affordable option for those interested in exploring the world of radio communications. Its design was influenced by the need for simplicity and reliability during the World War II era.</p>
+
+    <h3>Additional Details</h3>
+    <p>The EC-1A is often considered a classic among vintage radio enthusiasts and collectors. Its straightforward design and historical significance make it a sought-after piece for those interested in the history of radio technology.</p>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
