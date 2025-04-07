@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs PM-23 Speaker</h1>
+    <a href="pm-23.jpg" target="_blank">
+      <img src="pm-23.jpg" style="max-width: 640px;" alt="N4IXTs PM-23 Speaker">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters PM-23 Speaker</h2>
+      <h3>Years of Production: 1939-1945</h3>
+      <p>The Hallicrafters PM-23 speaker was a popular accessory designed to complement Hallicrafters shortwave receivers, particularly during the late 1930s and early 1940s. It was known for its elegant design and high-quality sound reproduction.</p>
+      <h3>Technical Specifications</h3>
+      <ul>
+        <li>12-inch electrodynamic speaker</li>
+        <li>Frequency response: 50 Hz to 10 kHz</li>
+        <li>Power handling: 10 watts</li>
+        <li>Impedance: 500 ohms</li>
+        <li>Field coil design for enhanced sound clarity</li>
+      </ul>
+      <h3>Notable Features</h3>
+      <ul>
+        <li>Art Deco-inspired design with a sleek metal grille</li>
+        <li>Available in two variants: one with an "H" emblem on the front grille and one without</li>
+        <li>Durable construction with a wooden cabinet and metal accents</li>
+        <li>Designed to match the aesthetic of Hallicrafters receivers</li>
+      </ul>
+      <h3>Historical Context</h3>
+      <p>The PM-23 speaker was introduced during a time when shortwave radio was gaining popularity among amateur radio enthusiasts and professionals. Its design and performance made it a sought-after accessory for Hallicrafters receivers, such as the SX-28 and S-20R.</p>
+      <h3>Units with "H" Emblem vs. Units Without</h3>
+      <p>Units with the "H" emblem on the front grille were considered more prestigious and were often marketed as premium models. The "H" emblem symbolized the Hallicrafters brand and added a distinctive touch to the speaker's appearance. Units without the emblem were functionally identical but lacked the branding, making them slightly less collectible among enthusiasts today.</p>
+      <p>Both variants shared the same technical specifications and performance, ensuring high-quality sound reproduction regardless of the design differences.</p>
+  <div class="footer">
+    <h2>N4IXTs Hallicrafters S-15 Sky Challenger Other Images</h2>
+    <a href="s-15-sky-challenger-logo-1.jpg" target="_blank">
+      <img src="s-15-sky-challenger-logo-1.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters S-15 Sky Champion Logo 1">
+    </a>
+    <p>&nbsp;</p>
+    <a href="s-15-sky-challenger-logo-2.jpg" target="_blank">
+      <img src="s-15-sky-challenger-logo-2.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters S-15 Sky Champion Logo 2">
+    </a>
+    <p>&nbsp;</p>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
