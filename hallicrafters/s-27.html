@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs RCA xxx</h1>
+    <a href="yyy.jpg" target="_blank">
+      <img src="yyy.jpg" style="max-width: 640px;" alt="N4IXTs RCA xxx">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+    <h2>Hallicrafters S-27 Transceiver</h2>
+    <h3>Years of Production: 1940-1946</h3>
+    <p>The Hallicrafters S-27 was one of the first commercially available VHF receivers, designed for use in the 27-143 MHz range. It was primarily used during World War II and in the post-war era for military, aviation, and amateur radio purposes.</p>
+
+    <h3>Technical Specifications:</h3>
+    <ul>
+      <li><strong>Frequency Range:</strong> 27-143 MHz (VHF)</li>
+      <li><strong>Modes:</strong> AM and FM</li>
+      <li><strong>Tubes:</strong> 12 vacuum tubes</li>
+      <li><strong>Power Supply:</strong> 110-120V AC</li>
+      <li><strong>IF Frequency:</strong> 5.25 MHz</li>
+      <li><strong>Audio Output:</strong> 2.5 watts</li>
+    </ul>
+
+    <h3>Notable Features:</h3>
+    <ul>
+      <li>First Hallicrafters receiver to cover VHF frequencies.</li>
+      <li>Equipped with a built-in speaker and headphone jack.</li>
+      <li>High sensitivity and selectivity for its time.</li>
+      <li>Bandspread tuning for precise frequency selection.</li>
+    </ul>
+
+    <h3>Historical Context:</h3>
+    <p>The Hallicrafters S-27 played a significant role during World War II, being used by the military for communication and monitoring purposes. After the war, it became popular among amateur radio operators due to its advanced VHF capabilities. Its design and performance set a benchmark for future VHF receivers.</p>
+
+    <h3>Additional Details:</h3>
+    <p>The S-27 was succeeded by the S-36, which introduced further improvements in performance and usability. Collectors and enthusiasts today value the S-27 for its historical significance and pioneering technology in the field of VHF communication.</p>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

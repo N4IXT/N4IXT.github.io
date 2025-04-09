@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Radio Shack DX-160</h1>
+    <a href="radio-shack-dx-160.jpg" target="_blank">
+      <img src="radio-shack-dx-160.jpg" style="max-width: 640px;" alt="N4IXTs Radio Shack DX-160">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+    <h2>Radio Shack DX-160</h2>
+    <h3>Years of Production: 1975-1980</h3>
+    <p>The Radio Shack DX-160 is a general coverage shortwave receiver that was popular among amateur radio enthusiasts and shortwave listeners during the late 1970s. It was known for its affordability and decent performance for its price range.</p>
+
+    <h3>Technical Specifications:</h3>
+    <ul>
+      <li>Frequency Range: 0.15 to 30 MHz</li>
+      <li>Modes: AM, CW, SSB</li>
+      <li>Intermediate Frequency (IF): 455 kHz</li>
+      <li>Power Supply: 120V AC or 12V DC</li>
+      <li>Analog tuning with a slide-rule dial</li>
+      <li>Built-in speaker and headphone jack</li>
+    </ul>
+
+    <h3>Notable Features:</h3>
+    <ul>
+      <li>Bandspread tuning for improved accuracy on amateur bands</li>
+      <li>Front-panel controls for RF gain, band selection, and mode selection</li>
+      <li>Compact and lightweight design</li>
+      <li>External antenna connections for improved reception</li>
+    </ul>
+
+    <h3>Historical Context:</h3>
+    <p>The DX-160 was part of Radio Shack's DX series of shortwave receivers, which were designed to cater to hobbyists and beginners in the world of shortwave listening. It was an upgrade to the earlier DX-150 model, offering improved performance and additional features. The DX-160 was widely regarded as a good entry-level receiver during its time and remains a nostalgic piece for collectors today.</p>
+
+    <h3>Additional Details:</h3>
+    <p>While the DX-160 lacked some of the advanced features of higher-end receivers, such as digital frequency readout or advanced filtering, it provided a solid listening experience for casual users. Its simple design and ease of use made it a favorite among those new to the hobby.</p>
+
+    <h3>Personal Note:</h3>
+    <p>I owned this radio back in the 1980s. At the time I was setting up a BBS for my Commodore 64. I needed a disk drive, so wound up trading this radio for a drive.</p>
+    <p>Fast forward to 2021. My friend who I'd traded the radio to had sadly passed away. His widow found it, and gave it back to me. It's now proudly displayed in my collection.</p>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

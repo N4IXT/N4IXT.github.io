@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters HA-2 2 Meter Transverter</h1>
+    <a href="ha-2.jpg" target="_blank">
+      <img src="ha-2.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters HA-2 2 Meter Transverter">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters HA-2 Transverter</h2>
+      <h3>Years of Production: 1959-1962</h3>
+      <p>The Hallicrafters HA-2 is a 2-meter transverter designed to convert signals between the 2-meter amateur radio band and the HF band, allowing operators to use their HF radios for VHF communication.</p>
+      <h3>Technical Specifications:</h3>
+      <ul>
+        <li>Frequency Range: 144-148 MHz (2-meter band)</li>
+        <li>Input Frequency: 28-30 MHz (10-meter band)</li>
+        <li>Power Output: Approximately 10 watts</li>
+        <li>Mode: AM and CW</li>
+        <li>Intermediate Frequency (IF): 10.7 MHz</li>
+        <li>Tubes: Utilizes vacuum tube technology</li>
+      </ul>
+      <h3>Notable Features:</h3>
+      <ul>
+        <li>Compact design for easy integration with HF radios.</li>
+        <li>High-quality construction typical of Hallicrafters equipment.</li>
+        <li>Designed for use with Hallicrafters HF transmitters like the HT-32.</li>
+      </ul>
+      <h3>Historical Context:</h3>
+      <p>The HA-2 was introduced during the late 1950s, a period of rapid growth in amateur VHF operation. It allowed amateur radio operators to explore the 2-meter band without needing a dedicated VHF transceiver, making it a popular choice for enthusiasts transitioning to VHF communication.</p>
+      <p>Hallicrafters was a leading manufacturer of amateur radio equipment during this era, and the HA-2 exemplified their commitment to innovation and quality. The transverter played a significant role in expanding the capabilities of amateur radio operators and remains a cherished piece of vintage equipment among collectors today.</p>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

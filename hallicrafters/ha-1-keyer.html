@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs HA-1 TO Keyer</h1>
+    <a href="ha-1-keyer.jpg" target="_blank">
+      <img src="ha-1-keyer.jpg" style="max-width: 640px;" alt="N4IXTs HA-1 TO Keyer">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters HT-32 Radio</h2>
+      <h2>Hallicrafters HA-1 Keyer</h2>
+      <h3>Years of Production: 1959 - 1964</h3>
+      <p>
+        The Hallicrafters HA-1 "TO Keyer" was a tube-based electronic keyer designed for amateur radio operators. 
+        It was one of the first commercially available keyers, making it a significant innovation in its time.
+      </p>
+      <h4>Technical Specifications:</h4>
+      <ul>
+        <li>Powered by vacuum tubes (6AL5, 12AU7, and 6V6).</li>
+        <li>Operates on 120V AC power.</li>
+        <li>Compatible with most transmitters of the era.</li>
+        <li>Adjustable dot and dash weighting for precise keying.</li>
+      </ul>
+      <h4>Notable Features:</h4>
+      <ul>
+        <li>Integrated sidetone oscillator for monitoring keying.</li>
+        <li>Compact and durable design for its time.</li>
+        <li>Ability to interface with a variety of keying paddles.</li>
+      </ul>
+      <h4>Historical Context:</h4>
+      <p>
+        The HA-1 was introduced during a period of rapid innovation in amateur radio technology. 
+        It provided operators with a more efficient way to send Morse code compared to traditional straight keys or semi-automatic "bug" keys.
+        Its release marked a shift toward electronic keying, which would later evolve into modern digital keyers.
+      </p>
+      <h4>Additional Details:</h4>
+      <p>
+        The HA-1 remains a sought-after collector's item among vintage amateur radio enthusiasts. 
+        Its design and functionality are a testament to the engineering prowess of Hallicrafters during the mid-20th century.
+      </p>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Other Radios</h1>
+    <a href="radio-shack-dx-160.jpg" target="_blank">
+      <img src="radio-shack-dx-160.jpg" style="max-width: 640px;" alt="N4IXTs Other Radios">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+    <h2>Other Radios</h2>
+    <p>In this section, you will find my collection of radios that don't fit into the other categories.</p>
+    <p>These are generally radios I only own one or two of.</p>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters S-94 Transceiver</h1>
+    <a href="s-94.jpg" target="_blank">
+      <img src="s-94.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters S-94 Transceiver">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+    <h2>Hallicrafters S-94 Transceiver</h2>
+    <h3>Years of Production: 1955-1957</h3>
+    <p>The Hallicrafters S-94, also known as the "Sky Courier," was a compact AM/CW transceiver designed for amateur radio operators. It was primarily intended for mobile and portable use, making it a popular choice for operators on the go.</p>
+
+    <h3>Technical Specifications:</h3>
+    <ul>
+      <li><strong>Frequency Coverage:</strong> 80, 40, 20, and 10 meters amateur bands</li>
+      <li><strong>Modes:</strong> AM (Amplitude Modulation) and CW (Continuous Wave)</li>
+      <li><strong>Power Output:</strong> Approximately 10 watts</li>
+      <li><strong>Power Supply:</strong> Operates on 6V DC or 110V AC with an external power supply</li>
+      <li><strong>Tubes:</strong> Utilizes vacuum tube technology</li>
+      <li><strong>Dimensions:</strong> Compact and lightweight for portability</li>
+    </ul>
+
+    <h3>Notable Features:</h3>
+    <ul>
+      <li>Designed for mobile and portable operation</li>
+      <li>Simple and user-friendly controls</li>
+      <li>Built-in speaker for convenient monitoring</li>
+      <li>Durable construction suitable for field use</li>
+    </ul>
+
+    <h3>Historical Context:</h3>
+    <p>The Hallicrafters S-94 was introduced during the mid-1950s, a time when amateur radio was gaining popularity among hobbyists and professionals alike. Its portability and ease of use made it a favorite among operators who needed a reliable transceiver for mobile or emergency communication. The S-94 represents a significant step in the evolution of amateur radio equipment, bridging the gap between stationary and mobile operation.</p>
+
+    <h3>Additional Details:</h3>
+    <p>Today, the Hallicrafters S-94 is considered a collector's item among vintage radio enthusiasts. Its historical significance and unique design make it a sought-after piece for those interested in the golden age of amateur radio.</p>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
