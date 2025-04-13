@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters S-29 Receiver</h1>
+    <a href="s-29.jpg" target="_blank">
+      <img src="s-29.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters S-29 Receiver">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+    <h2>Hallicrafters S-29 Receiver</h2>
+    <h3>Years of Production: 1939-1941</h3>
+    <p>The Hallicrafters S-29, also known as the "Sky Traveler," was a portable shortwave receiver designed for amateur radio enthusiasts and general shortwave listeners. It was one of the early models that combined portability with advanced features for its time.</p>
+
+    <h3>Technical Specifications:</h3>
+    <ul>
+      <li>Frequency Coverage: 540 kHz to 30 MHz in four bands</li>
+      <li>Tubes: 6-tube superheterodyne circuit</li>
+      <li>Power Supply: Operates on AC or DC</li>
+      <li>Audio Output: Built-in speaker and headphone jack</li>
+      <li>Dimensions: Compact and portable design</li>
+    </ul>
+
+    <h3>Notable Features:</h3>
+    <ul>
+      <li>Bandspread tuning for precise frequency selection</li>
+      <li>Portable design with a built-in handle</li>
+      <li>Dual power capability for flexibility</li>
+      <li>Durable metal case for rugged use</li>
+    </ul>
+
+    <h3>Historical Context:</h3>
+    <p>The Hallicrafters S-29 was introduced just before World War II, during a time when shortwave listening was gaining popularity. Its portability and performance made it a favorite among hobbyists and travelers. The receiver was also used by military personnel and emergency services during the war, showcasing its reliability and versatility.</p>
+
+    <h3>Additional Details:</h3>
+    <p>The S-29 was part of Hallicrafters' effort to make shortwave radios more accessible to the general public. Its combination of affordability, portability, and performance helped establish Hallicrafters as a leading name in the radio industry during the mid-20th century.</p>
+
+    <h3>Personal Note</h3>
+    <p>This is actually a pair of S-29s I recently acquired. The face of one is in rough shape, but has a decent body. The other is the opposite, the face is acceptable but the body is in need of help.</p>
+    <p>I plan to combine the pair to make one acceptable looking radio. When I do I'll update this page with new pictures.</p>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
