@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters Continental Receiver</h1>
+    <a href="continental.jpg" target="_blank">
+      <img src="continental.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters Continental Receiver">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+    <h2>Hallicrafters Continental Receiver</h2>
+    <h3>Years of Production: 1946-1948</h3>
+
+    <p>The Hallicrafters Continental Receiver was a high-performance shortwave radio designed for amateur radio enthusiasts and professionals. It was known for its advanced features and robust build quality, making it a popular choice during its time.</p>
+
+    <h4>Technical Specifications:</h4>
+    <ul>
+      <li>Frequency Range: 540 kHz to 30 MHz</li>
+      <li>Modes: AM, CW</li>
+      <li>Tubes: 12-tube superheterodyne design</li>
+      <li>Power Supply: 110-120V AC</li>
+      <li>Audio Output: 5 watts</li>
+    </ul>
+
+    <h4>Notable Features:</h4>
+    <ul>
+      <li>High sensitivity and selectivity for clear reception</li>
+      <li>Bandspread tuning for precise frequency adjustment</li>
+      <li>Built-in speaker with excellent audio quality</li>
+      <li>Durable metal chassis and classic design</li>
+    </ul>
+
+    <h4>Historical Context:</h4>
+    <p>Produced shortly after World War II, the Hallicrafters Continental Receiver reflected the technological advancements of the era. It was widely used by amateur radio operators and played a role in fostering global communication during the post-war years. Its reliability and performance made it a collector's item among vintage radio enthusiasts today.</p>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
