@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Mystery Item</h1>
+    <a href="mystery-01.jpg" target="_blank">
+      <img src="mystery-01.jpg" style="max-width: 640px;" alt="N4IXTs Mystery Item">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Mystery Item</h2>
+      <h3>What is this thing?</h3>
+      <p>Some time back I was at a radio sale, and this item was on the "make offer" table. No one could tell me what it was. I was intrigued, offered $5 and it came home with me.</p>
+      <p>Unfortunately, my searching has failed me. My guess is it's either an accessory to a radio, or some home brew item.</p>
+      <p>If you have a clue, by all means shoot me an email, n4ixt at outlook.com. I'm open to suggestions. I'll see if I can find some time to take off the cover and will update this page with additional photos of its insides when I can.</p>
+  <div class="footer">
+    <h2>N4IXTs Mystery Item - Other Images</h2>
+    <a href="mystery-02.jpg" target="_blank">
+      <img src="mystery-02.jpg" style="max-width: 640px;" alt="N4IXTs Mystery Item Image 2">
+    </a>
+    <p>&nbsp;</p>
+    <a href="mystery-03.jpg" target="_blank">
+      <img src="mystery-03.jpg" style="max-width: 640px;" alt="N4IXTs Mystery Item Image 3">
+    </a>
+    <p>&nbsp;</p>
+    <a href="mystery-04.jpg" target="_blank">
+      <img src="mystery-04.jpg" style="max-width: 640px;" alt="N4IXTs Mystery Item Image 4">
+    </a>
+    <p>&nbsp;</p>
+    <a href="mystery-05.jpg" target="_blank">
+      <img src="mystery-05.jpg" style="max-width: 640px;" alt="N4IXTs Mystery Item Image 5">
+    </a>
+    <p>&nbsp;</p>
+    <a href="mystery-06.jpg" target="_blank">
+      <img src="mystery-06.jpg" style="max-width: 640px;" alt="N4IXTs Mystery Item Image 6">
+    </a>
+    <p>&nbsp;</p>
+    <a href="mystery-07.jpg" target="_blank">
+      <img src="mystery-07.jpg" style="max-width: 640px;" alt="N4IXTs Mystery Item Image 7">
+    </a>
+    <p>&nbsp;</p>
+    <a href="mystery-08.jpg" target="_blank">
+      <img src="mystery-08.jpg" style="max-width: 640px;" alt="N4IXTs Mystery Item Image 8">
+    </a>
+    <p>&nbsp;</p>
+    <a href="mystery-09.jpg" target="_blank">
+      <img src="mystery-09.jpg" style="max-width: 640px;" alt="N4IXTs Mystery Item Image 9">
+    </a>
+    <p>&nbsp;</p>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

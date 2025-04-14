@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters CRX-2</h1>
+    <a href="crx-2.jpg" target="_blank">
+      <img src="crx-2.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters CRX-2">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+    <h2>Hallicrafters CRX-2</h2>
+    <h3>Years of Production: 1950s</h3>
+    <p>The Hallicrafters CRX-2 is a vintage shortwave receiver known for its robust design and reliable performance. It was designed for amateur radio enthusiasts and shortwave listeners during the mid-20th century.</p>
+
+    <h3>Technical Specifications:</h3>
+    <ul>
+      <li>Frequency Range: Covers multiple shortwave bands</li>
+      <li>Power Supply: Operates on AC mains</li>
+      <li>Tube-Based Circuitry: Utilizes vacuum tubes for signal amplification</li>
+      <li>Audio Output: Built-in speaker and headphone jack</li>
+    </ul>
+
+    <h3>Notable Features:</h3>
+    <ul>
+      <li>High sensitivity for weak signal reception</li>
+      <li>Bandspread tuning for precise frequency selection</li>
+      <li>Durable metal chassis for long-lasting use</li>
+    </ul>
+
+    <h3>Historical Context:</h3>
+    <p>The Hallicrafters CRX-2 was produced during the golden age of shortwave radio, a time when global communication and information exchange relied heavily on radio technology. It was a popular choice among amateur radio operators and hobbyists for its affordability and performance.</p>
+
+    <h3>Additional Details:</h3>
+    <p>The CRX-2 is considered a collector's item today, valued for its historical significance and craftsmanship. Restored units are often displayed in museums or used by enthusiasts who appreciate vintage radio equipment.</p>
+  <div class="footer">
+    <h2>N4IXTs Hallicrafters CRX-2 Other Images</h2>
+    <a href="crx-2-back.jpg" target="_blank">
+      <img src="crx-2-back.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters CRX-2 Rear View">
+    </a>
+    <p>&nbsp;</p>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
