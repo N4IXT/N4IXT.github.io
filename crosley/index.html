@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Crosley Collection</h1>
+    <a href="crosley-logo.png" target="_blank">
+      <img src="crosley-logo.png" style="max-width: 640px;" alt="N4IXTs Crosley Logo">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+<div class="overview">
+  <h3>Overview of Crosley Corporation</h3>
+  <p>Crosley Corporation was founded in the 1920s by Powel Crosley Jr., an American inventor and entrepreneur. The company became a household name for its affordable and innovative consumer products, particularly radios, during the early 20th century.</p>
+</div>
+
+<div class="milestones">
+  <h3>Key Milestones</h3>
+  <ul>
+    <li>1921: Powel Crosley Jr. founded the company, initially focusing on affordable radios.</li>
+    <li>1923: Introduction of the Crosley Harko, one of the first affordable radios for the average consumer.</li>
+    <li>1930s: Expansion into other consumer electronics and appliances, including refrigerators.</li>
+    <li>1940s: Production of compact cars and military equipment during World War II.</li>
+  </ul>
+</div>
+
+<div class="notable-products">
+  <h3>Notable Products</h3>
+  <ul>
+    <li><strong>Crosley Harko:</strong> One of the first affordable radios, making radio technology accessible to the masses.</li>
+    <li><strong>Crosley Pup:</strong> A compact and inexpensive radio that became highly popular in the 1920s.</li>
+    <li><strong>Crosley Shelvador:</strong> The first refrigerator with shelves in the door, revolutionizing appliance design.</li>
+  </ul>
+</div>
+
+<div class="historical-context">
+  <h3>Historical Context</h3>
+  <p>During the 1920s and 1930s, Crosley Corporation played a significant role in democratizing technology. Radios were previously considered luxury items, but Crosley's affordable designs brought them into millions of homes. This innovation coincided with the rise of radio broadcasting, making Crosley a key player in the era's communication revolution.</p>
+</div>
+
+<div class="legacy">
+  <h3>Legacy</h3>
+  <p>Although Crosley Corporation ceased operations in its original form, the brand has been revived in recent years, focusing on retro-style electronics and appliances. Crosley's radios and other products remain iconic symbols of early 20th-century innovation and accessibility.</p>
+</div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

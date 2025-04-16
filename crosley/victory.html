@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Crosley Victory Model</h1>
+    <a href="victory-1.jpg" target="_blank">
+      <img src="victory-1.jpg" style="max-width: 640px;" alt="N4IXTs Crosley Victory Model">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+    <h2>Crosley Victory Radio</h2>
+    <h3>Years of Production: 1942-1945</h3>
+    <p>The Crosley Victory Radio was produced during World War II as part of the war effort. It was designed to be a reliable and affordable radio for American households during a time of resource scarcity.</p>
+
+    <h3>Technical Specifications</h3>
+    <ul>
+      <li>Type: AM Broadcast Receiver</li>
+      <li>Power Supply: AC/DC</li>
+      <li>Tube Count: 5</li>
+      <li>Frequency Range: 540 kHz - 1600 kHz</li>
+      <li>Wooden Cabinet with a simple, utilitarian design</li>
+    </ul>
+
+    <h3>Notable Features</h3>
+    <ul>
+      <li>Compact and lightweight design</li>
+      <li>Durable construction to withstand wartime conditions</li>
+      <li>Affordable price point for the average American family</li>
+    </ul>
+
+    <h3>Historical Context</h3>
+    <p>The Crosley Victory Radio was named to reflect the patriotic spirit of the time. During World War II, many consumer goods were rationed or repurposed for the war effort. Radios like the Crosley Victory were designed to use fewer materials while still providing essential communication and entertainment for families.</p>
+    <p>Crosley was a well-known manufacturer of radios and other consumer electronics, and the Victory model became a symbol of resilience and ingenuity during a challenging period in history.</p>
+
+  <div class="footer">
+    <h2>N4IXTs Crosley Victory Model Other Images</h2>
+    <a href="victory-2.jpg" target="_blank">
+      <img src="victory-2.jpg" style="max-width: 640px;" alt="N4IXTs Crosley Victory Model Rear Cover">
+    </a>
+    <p>Victory Model Rear Cover</p>
+    <p>&nbsp;</p>
+    <a href="victory-3.jpg" target="_blank">
+      <img src="victory-3.jpg" style="max-width: 640px;" alt="N4IXTs Crosley Victory Model Inside">
+    </a>
+    <p>Victory Model Inside</p>
+    <p>&nbsp;</p>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
