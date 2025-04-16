@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Crosley Book</h1>
+    <a href="crosley-book.jpg" target="_blank">
+      <img src="crosley-book.jpg" style="max-width: 640px;" alt="N4IXTs Crosley Book">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+    <h2>Crosley: Two Brothers and a Business Empire That Transformed the Nation</h2>
+    <h3>An Excellent Book</h3>
+    <p>If you want to learn more about the Crosley Company and its founders Powell Crosley Jr. and Lewis Crosley, then I highly recommend this book.</p>
+    <p>Powell was the Elon Musk of his time. He was extremely rich, and was in a variety of business beyond just radio manufacturing. They created home appliances, airplanes, cars and car accessories, was owner of the Cincinnati Reds, and two radio stations to name but a few things.</p>
+    <h3>About the Book</h3>
+    <p>
+      <em>Crosley: Two Brothers and a Business Empire That Transformed the Nation</em> is a fascinating biography of Powel and Lewis Crosley, two brothers who revolutionized industries ranging from radio broadcasting to automobile manufacturing. The book delves into their innovative spirit, entrepreneurial ventures, and the lasting impact they had on American culture and technology.
+    </p>
+    <p>
+      You can find more details about the book on its 
+      <a href="https://www.amazon.com/Crosley-Brothers-Business-Empire-Transformed-ebook/dp/B0058JGN90/ref=sr_1_1?crid=2QR9UTE1UCJC4&dib=eyJ2IjoiMSJ9.4RgDCtmQuS_maDkmJGu4A9VqUiP9zVzL93QYMqjMFx0SX8Y5yyLoI2upHCquMzSd-AZAHPaJV5SmmzpGug6w0OjNTAYUVY26JD6lu2_0Zt77CRxEAjWjyt46TpVaaJkoLN9de06XomahslMz-AggRObVUcjyTH_cSp1NCegejlMjIWbXSNrFNHobknyf-NoHF2QmKwEChrvcFf08K7JVOjoOceOqAULDsZAOtqTOkJ0.R_0L3bQwTfElosnRu-Pw8NiVyMs6V-LwAx4Lzedng70&dib_tag=se&keywords=crosley+book&qid=1744765648&sprefix=crosley+book%2Caps%2C137&sr=8-1" target="_blank">
+        Amazon page
+      </a>.
+    </p>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
