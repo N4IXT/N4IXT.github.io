@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters xxx</h1>
+    <a href="yyy.jpg" target="_blank">
+      <img src="yyy.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters xxx">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters HT-32 Radio</h2>
+
+  <div class="footer">
+    <h2>N4IXTs Hallicrafters xxx Other Images</h2>
+    <a href=".jpg" target="_blank">
+      <img src=".jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters xxx">
+    </a>
+    <p></p>
+    <p>&nbsp;</p>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

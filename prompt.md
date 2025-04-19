@@ -25,3 +25,6 @@ Provide an overview of the crosley corporation paying special attention to their
 Insert a link to the ARRL Amateur Radio Relay League (Life Member). Format it so the title of the club is listed, then the word Website which should link to https://www.arrl.org/
 
 Tell me about the book Crosley: Two Brothers and a Business Empire That Transformed the Nation. You can find the book at https://www.amazon.com/Crosley-Brothers-Business-Empire-Transformed-ebook/dp/B0058JGN90/ref=sr_1_1?crid=2QR9UTE1UCJC4&dib=eyJ2IjoiMSJ9.4RgDCtmQuS_maDkmJGu4A9VqUiP9zVzL93QYMqjMFx0SX8Y5yyLoI2upHCquMzSd-AZAHPaJV5SmmzpGug6w0OjNTAYUVY26JD6lu2_0Zt77CRxEAjWjyt46TpVaaJkoLN9de06XomahslMz-AggRObVUcjyTH_cSp1NCegejlMjIWbXSNrFNHobknyf-NoHF2QmKwEChrvcFf08K7JVOjoOceOqAULDsZAOtqTOkJ0.R_0L3bQwTfElosnRu-Pw8NiVyMs6V-LwAx4Lzedng70&dib_tag=se&keywords=crosley+book&qid=1744765648&sprefix=crosley+book%2Caps%2C137&sr=8-1
+
+
+I need a small javascript routine built into an html webpage. It will have a variable, StartDate. The script should calculate the time since StartDate to the current date and time and display it as x year, x months, x days, x hours, and x minutes. It should then calculate the time remaining from the current date to two years after the StartDate, and display it as x year, x months, x days, x hours, and x minutes and display it.
