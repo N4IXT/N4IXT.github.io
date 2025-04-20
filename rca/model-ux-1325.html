@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs RCA Model UX-1325 Speaker</h1>
+    <a href="model-ux-1325-1.jpg" target="_blank">
+      <img src="model-ux-1325-1.jpg" style="max-width: 640px;" alt="N4IXTs RCA Model UX-1325 Speaker">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters HT-32 Radio</h2>
+
+  <div class="footer">
+    <h2>N4IXTs RCA Model UX-1325 Speaker Other Images</h2>
+    <a href="model-ux-1325-2.jpg" target="_blank">
+      <img src="model-ux-1325-2.jpg" style="max-width: 640px;" alt="N4IXTs RCA Model UX-1325 Speaker">
+    </a>
+    <p>UX-1325 Base</p>
+    <p>&nbsp;</p>
+    <a href="model-ux-1325-3.jpg" target="_blank">
+      <img src="model-ux-1325-3.jpg" style="max-width: 640px;" alt="N4IXTs RCA Model UX-1325 Speaker">
+    </a>
+    <p>UX-1325 Rear View</p>
+    <p>&nbsp;</p>
+    <a href="model-ux-1325-4.jpg" target="_blank">
+      <img src="model-ux-1325-4.jpg" style="max-width: 640px;" alt="N4IXTs RCA Model UX-1325 Speaker">
+    </a>
+    <p>UX-1325 Side View</p>
+    <p>&nbsp;</p>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
