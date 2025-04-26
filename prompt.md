@@ -13,9 +13,9 @@ Tell me about the rca victor model p-31 radio. Include the years of production a
 
 
 Use in Copilot web
-Tell me about the hallicrafters ha-1 keyer. Format the output as html. Format the name of the speaker as an h2 tag at the very top. Under it, include the years of production at the top, in h3, labeled as "Years of Production: ". Then add then other information below it, such as technical specifications, notable features, and historical context plus any other details. Indent the header tags six spaces, then indent other lines as appropriate. I only need the code for the body area, you can omit the other areas outside the body.
+Tell me about the hallicrafters hd-1 capacitance decade. Format the output as html. Format the name of the speaker as an h2 tag at the very top. Under it, include the years of production at the top, in h3, labeled as "Years of Production: ". Then add then other information below it, such as technical specifications, notable features, and historical context plus any other details. Indent the header tags six spaces, then indent other lines as appropriate. I only need the code for the body area, you can omit the other areas outside the body.
 
-Tell me about the rca victor model p-31 radio. Include the years of production, then add then other information below it, such as technical specifications, notable features, and historical context plus any other details.
+Tell me about the hallicrafters hd-2 resistor decade. Tell me what it was used for, and how it might be used. Include the years of production, then add then other information below it, such as technical specifications, notable features, and historical context plus any other details.
 
 
 Here is what I use to get an overview page for a company:

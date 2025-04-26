@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs XYZ Collection</h1>
+    <a href=".jpg" target="_blank">
+      <img src=".jpg" style="max-width: 640px;" alt="N4IXTs XYZ Logo">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+      <div id="menu-content"></div>
+    </div>
+    <div class="content">
+
+<!--
+  Prompt to use to get info for the content section - delete this when done:
+
+  Provide an overview of the XYZ corporation paying special attention to their radios. include an overview of the company, key milestones, notable products, historical context, and legacy. Format the output as HTML. Use h3 tag for the different sections.
+-->
+
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

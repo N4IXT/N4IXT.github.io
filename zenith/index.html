@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Zenith Collection</h1>
+    <a href="zenith-logo-1918.png" target="_blank">
+      <img src="zenith-logo-1918.png" style="max-width: 640px;" alt="N4IXTs Zenith Logo 1918">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+      <div id="menu-content"></div>
+    </div>
+    <div class="content">
+
+      <h3>Overview of Zenith Corporation</h3>
+      <p>Zenith Corporation, founded in 1918 in Chicago, Illinois, was a pioneering American electronics company. Known for its innovation and quality, Zenith played a significant role in shaping the consumer electronics industry, particularly in the field of radio and television manufacturing.</p>
+
+      <h3>Key Milestones</h3>
+      <ul>
+        <li>1918: Zenith was founded by Ralph H. G. Mathews and Karl Hassel.</li>
+        <li>1923: Introduced the first portable radio.</li>
+        <li>1933: Developed the first commercial FM radio receiver.</li>
+        <li>1948: Launched the first subscription television service.</li>
+        <li>1950s: Introduced the first wireless remote control for TVs, called the "Flash-Matic."</li>
+      </ul>
+
+      <h3>Notable Products</h3>
+      <ul>
+        <li><strong>Zenith Trans-Oceanic Radios:</strong> A series of portable shortwave radios that became iconic for their durability and performance.</li>
+        <li><strong>Zenith Royal 500:</strong> One of the first transistor radios, introduced in 1955.</li>
+        <li><strong>Zenith Space Command:</strong> The first practical wireless remote control for televisions.</li>
+      </ul>
+
+      <h3>Historical Context</h3>
+      <p>Zenith emerged during a time when radio technology was rapidly evolving. The company capitalized on the growing demand for consumer electronics, particularly during the post-World War II economic boom. Zenith's innovations in FM radio and television technology set industry standards and solidified its reputation as a leader in the field.</p>
+
+      <h3>Legacy</h3>
+      <p>Although Zenith was eventually acquired by LG Electronics in 1995, its legacy endures through its contributions to the electronics industry. The company's emphasis on innovation and quality left a lasting impact, and its products remain highly regarded by collectors and enthusiasts.</p>
+    </div>
+
+  <div class="footer">
+    <h2>Zenith Logos Over the Years</h2>
+    <a href="zenith-logo-1919.png" target="_blank">
+      <img src="zenith-logo-1919.png" style="max-width: 640px;" alt="Zenith Logo 1919">
+    </a>
+    <p>Zenith Logo Circa 1919</p>
+    <p>&nbsp;</p>
+    <a href="zenith-logo-1923.png" target="_blank">
+      <img src="zenith-logo-1923.png" style="max-width: 640px;" alt="Zenith Logo 1923">
+    </a>
+    <p>Zenith Logo Circa 1954</p>
+    <p>&nbsp;</p>
+    <a href="zenith-logo-1954.png" target="_blank">
+      <img src="zenith-logo-1954.png" style="max-width: 640px;" alt="Zenith Logo 1954">
+    </a>
+    <p>Zenith Logo Current</p>
+    <p>&nbsp;</p>
+    <a href="zenith-logo-current.jpg" target="_blank">
+      <img src="zenith-logo-current.jpg" style="max-width: 640px;" alt="Zenith Logo 1954">
+    </a>
+    <p>Zenith Logo Current</p>
+    <p>&nbsp;</p>
+  </div>
+
+
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
