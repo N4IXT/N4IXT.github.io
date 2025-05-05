@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters SX-99</h1>
+    <a href="sx-99.jpg" target="_blank">
+      <img src="sx-99.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters SX-99">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters SX-99</h2>
+      <h3>Years of Production: 1953 - 1955</h3>
+      <p>The Hallicrafters SX-99 is a vintage shortwave receiver known for its reliability and performance during the mid-20th century. It was designed for amateur radio enthusiasts and shortwave listeners.</p>
+
+      <h4>Technical Specifications:</h4>
+      <ul>
+        <li>Frequency Coverage: 0.54 to 54 MHz in 4 bands</li>
+        <li>Modes: AM, CW</li>
+        <li>Tubes: 9 vacuum tubes</li>
+        <li>IF Frequency: 455 kHz</li>
+        <li>Audio Output: 3 watts</li>
+      </ul>
+
+      <h4>Notable Features:</h4>
+      <ul>
+        <li>Bandspread tuning for precise frequency selection</li>
+        <li>Built-in speaker</li>
+        <li>Selectable bandwidth for improved signal clarity</li>
+        <li>Classic Hallicrafters design with a durable metal chassis</li>
+      </ul>
+
+      <h4>Historical Context:</h4>
+      <p>The SX-99 was introduced during the post-war era when amateur radio was gaining popularity. It was an affordable yet capable receiver, making it a favorite among hobbyists. Its design reflects the technological advancements of the time, offering good performance at a reasonable price.</p>
+
+      <h4>Additional Details:</h4>
+      <p>The SX-99 remains a sought-after collector's item today, appreciated for its historical significance and nostalgic value. Many enthusiasts restore and use these radios as a testament to their enduring quality.</p>
+
+<!--
+  <div class="footer">
+    <h2>N4IXTs Hallicrafters S-99 Other Images</h2>
+    <a href=".jpg" target="_blank">
+      <img src=".jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters S-99">
+    </a>
+    <p></p>
+    <p>&nbsp;</p>
+  </div>
+-->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

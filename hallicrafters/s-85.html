@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters S-85</h1>
+    <a href="s-85.jpg" target="_blank">
+      <img src="s-85.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters S-85">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters S-85</h2>
+      <h3>Years of Production: 1954 - 1959</h3>
+      <p>The Hallicrafters S-85 is a vintage shortwave receiver that was popular among amateur radio enthusiasts during the mid-20th century. It is known for its robust design and reliable performance.</p>
+
+      <h3>Technical Specifications:</h3>
+      <ul>
+        <li>Frequency Coverage: 0.54 to 34 MHz in four bands</li>
+        <li>Modes: AM, CW</li>
+        <li>Tubes: 8 vacuum tubes</li>
+        <li>Power Supply: 110-120V AC</li>
+        <li>Audio Output: 3.5 watts</li>
+      </ul>
+
+      <h3>Notable Features:</h3>
+      <ul>
+        <li>Bandspread tuning for precise frequency selection</li>
+        <li>Built-in speaker for convenient listening</li>
+        <li>Selectable AVC (Automatic Volume Control)</li>
+        <li>Adjustable BFO (Beat Frequency Oscillator) for CW reception</li>
+      </ul>
+
+      <h3>Historical Context:</h3>
+      <p>The Hallicrafters S-85 was introduced during the golden age of shortwave radio, a time when amateur radio operators and hobbyists were exploring the world of global communication. Its affordability and solid performance made it a popular choice for beginners and seasoned operators alike. The S-85 is still cherished by collectors and enthusiasts for its classic design and historical significance.</p>
+
+
+<!--
+  <div class="footer">
+    <h2>N4IXTs Hallicrafters S-85 Other Images</h2>
+    <a href=".jpg" target="_blank">
+      <img src=".jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters S-85">
+    </a>
+    <p></p>
+    <p>&nbsp;</p>
+  </div>
+-->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
