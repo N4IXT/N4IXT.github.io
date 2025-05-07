@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters HT-18</h1>
+    <a href="ht-18-01.jpg" target="_blank">
+      <img src="ht-18-01.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters HT-18">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters HT-18</h2>
+      <h3>Years of Production: 1947-1950</h3>
+      <p>The Hallicrafters HT-18 is a vintage VFO (Variable Frequency Oscillator) transmitter designed for amateur radio enthusiasts. It was one of the early post-war transmitters that gained popularity for its reliability and performance.</p>
+
+      <h3>Technical Specifications:</h3>
+      <ul>
+        <li>Frequency Range: 160 meters to 10 meters (1.8 MHz to 30 MHz)</li>
+        <li>Power Output: Approximately 10 watts</li>
+        <li>Modulation: CW (Continuous Wave) and AM (Amplitude Modulation)</li>
+        <li>Tubes: Utilizes a combination of vacuum tubes for signal generation and amplification</li>
+        <li>Power Supply: Operates on 110-120V AC</li>
+      </ul>
+
+      <h3>Notable Features:</h3>
+      <ul>
+        <li>Stable VFO for precise frequency control</li>
+        <li>Compact and lightweight design for its time</li>
+        <li>Compatible with a variety of external amplifiers and receivers</li>
+        <li>Front-panel controls for easy operation</li>
+      </ul>
+
+      <h3>Historical Context:</h3>
+      <p>The Hallicrafters HT-18 was introduced during the late 1940s, a period when amateur radio was experiencing significant growth following World War II. The transmitter was designed to meet the needs of amateur operators who required a reliable and affordable VFO-based transmitter. Its introduction marked a shift from crystal-controlled transmitters to more flexible VFO designs, allowing operators to tune across a wider range of frequencies.</p>
+
+      <h3>Additional Details:</h3>
+      <p>The HT-18 is often paired with Hallicrafters receivers such as the SX-28 or SX-42 to create a complete amateur radio station. Collectors and enthusiasts value the HT-18 for its historical significance and its role in advancing amateur radio technology during the mid-20th century.</p>
+
+  <div class="footer">
+    <h2>N4IXTs Hallicrafters HT-18 Other Images</h2>
+    <a href="ht-18-02.jpg" target="_blank">
+      <img src="ht-18-02.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters HT-18">
+    </a>
+    <p>Rear View</p>
+    <p>&nbsp;</p>
+    <h2>N4IXTs Hallicrafters HT-18 Other Images</h2>
+    <a href="ht-18-03.jpg" target="_blank">
+      <img src="ht-18-03.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters HT-18">
+    </a>
+    <p>Inside the radio</p>
+    <p>&nbsp;</p>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
