@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters HD-1 Capacitance Decade</h1>
+    <a href="hd-1.jpg" target="_blank">
+      <img src="hd-1.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters HD-1 Capacitance Decade">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters HD-1 Capacitance Decade</h2>
+      <h3>Years of Production: 1950s</h3>
+      <p>The Hallicrafters HD-1 Capacitance Decade is a precision instrument designed for use in electronic testing and experimentation. It allows users to select specific capacitance values by combining various capacitors in a decade configuration.</p>
+
+      <h3>Technical Specifications:</h3>
+      <ul>
+        <li>Capacitance Range: 10 pF to 1 µF</li>
+        <li>Accuracy: ±1%</li>
+        <li>Switch Type: Rotary switches for decade selection</li>
+        <li>Construction: Metal enclosure with high-quality components</li>
+      </ul>
+
+      <h3>Notable Features:</h3>
+      <ul>
+        <li>Wide range of capacitance values for versatile testing</li>
+        <li>Compact and durable design</li>
+        <li>Easy-to-read labeling for quick adjustments</li>
+      </ul>
+
+      <h3>Historical Context:</h3>
+      <p>The Hallicrafters HD-1 was produced during the 1950s, a time when electronic experimentation and development were rapidly advancing. It was a valuable tool for engineers, technicians, and hobbyists working on radio and other electronic equipment. The HD-1 reflects the high-quality craftsmanship and innovation that Hallicrafters was known for during its peak years.</p>
+
+      <h3>Additional Details:</h3>
+      <p>This device is a testament to the ingenuity of mid-20th-century electronics, offering a reliable and precise method for testing and calibrating circuits. It remains a sought-after collector's item for vintage electronics enthusiasts.</p>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

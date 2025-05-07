@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters CRX-4 Civic Patrol</h1>
+    <a href="crx-4.jpg" target="_blank">
+      <img src="crx-4.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters CRX-4 Civic Patrol">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters CRX-4 Civic Patrol</h2>
+      <h3>Years of Production: 1959-1962</h3>
+      <p>The Hallicrafters CRX-4 Civic Patrol was a VHF receiver designed for public safety and civic communication purposes. It was widely used by police departments, fire services, and other municipal organizations during its production years.</p>
+
+      <h3>Technical Specifications:</h3>
+      <ul>
+        <li>Frequency Range: 30-50 MHz (VHF low band)</li>
+        <li>Mode: AM (Amplitude Modulation)</li>
+        <li>Power Supply: 110-120V AC</li>
+        <li>Audio Output: 3.5 watts</li>
+        <li>IF Frequency: 10.7 MHz</li>
+        <li>Tube Complement: 6 tubes including RF amplifier, mixer, and audio output stages</li>
+      </ul>
+
+      <h3>Notable Features:</h3>
+      <ul>
+        <li>Compact and rugged design for reliable operation</li>
+        <li>Front-panel tuning with a large, easy-to-read dial</li>
+        <li>Built-in speaker for clear audio output</li>
+        <li>External antenna connection for improved reception</li>
+      </ul>
+
+      <h3>Historical Context:</h3>
+      <p>The CRX-4 was introduced during a time when VHF communication was becoming increasingly important for public safety. Its affordability and reliability made it a popular choice for smaller municipalities and volunteer organizations. The radio's design reflected Hallicrafters' commitment to producing high-quality communication equipment for both amateur and professional use.</p>
+
+      <h3>Additional Details:</h3>
+      <p>The Hallicrafters CRX-4 is now considered a collector's item among vintage radio enthusiasts. Its historical significance and robust construction make it a prized possession for those interested in the evolution of communication technology.</p>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
