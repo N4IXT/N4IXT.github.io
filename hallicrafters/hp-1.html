@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters HP-1 Power Supply</h1>
+    <a href="hp-1.jpg" target="_blank">
+      <img src="hp-1.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters HP-1 Power Supply">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters HP-1 Power Supply</h2>
+      <h3>Years of Production: 1950s</h3>
+      <p>The Hallicrafters HP-1 Power Supply was designed to provide reliable power for Hallicrafters' line of amateur radio equipment. It was a key accessory for radio enthusiasts during the mid-20th century.</p>
+
+      <h3>Technical Specifications:</h3>
+      <ul>
+        <li>Input Voltage: 110-120V AC</li>
+        <li>Output Voltage: 250V DC and 6.3V AC for tube filaments</li>
+        <li>Maximum Current: 100 mA</li>
+        <li>Rectifier: Vacuum tube-based design</li>
+      </ul>
+
+      <h3>Notable Features:</h3>
+      <ul>
+        <li>Compact and durable metal chassis</li>
+        <li>Integrated fuse for safety</li>
+        <li>Designed to complement Hallicrafters receivers and transmitters</li>
+      </ul>
+
+      <h3>Historical Context:</h3>
+      <p>The HP-1 was introduced during the golden age of amateur radio, when Hallicrafters was a leading manufacturer of radio equipment. It was a popular choice for hobbyists who needed a dependable power supply for their tube-based radios. The HP-1's robust design and reliable performance made it a staple in many amateur radio setups of the era.</p>
+
+      <h3>Additional Details:</h3>
+      <p>The Hallicrafters HP-1 is now considered a collectible item among vintage radio enthusiasts. Its design reflects the engineering standards of the 1950s, and it remains a testament to the innovation of the time.</p>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

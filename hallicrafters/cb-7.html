@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters CB-7</h1>
+    <a href="cb-7.jpg" target="_blank">
+      <img src="cb-7.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters CB-7">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters CB-7</h2>
+      <h3>Years of Production: 1959-1962</h3>
+      <p>The Hallicrafters CB-7 is a vintage Citizens Band (CB) radio that was popular during the late 1950s and early 1960s. It was designed for both amateur radio enthusiasts and general consumers, offering reliable communication over short distances.</p>
+
+      <h3>Technical Specifications:</h3>
+      <ul>
+        <li>Frequency Range: 27 MHz (CB Band)</li>
+        <li>Channels: 5 crystal-controlled channels</li>
+        <li>Power Output: 5 watts</li>
+        <li>Modulation: AM (Amplitude Modulation)</li>
+        <li>Power Supply: 110V AC or 12V DC (with optional adapter)</li>
+        <li>Dimensions: 10 x 6 x 8 inches</li>
+      </ul>
+
+      <h3>Notable Features:</h3>
+      <ul>
+        <li>Compact and portable design</li>
+        <li>Built-in speaker and microphone</li>
+        <li>Durable metal chassis</li>
+        <li>Simple and user-friendly controls</li>
+        <li>Crystal-controlled frequency stability</li>
+      </ul>
+
+      <h3>Historical Context:</h3>
+      <p>The Hallicrafters CB-7 was introduced during the early days of CB radio, a time when personal communication devices were becoming increasingly popular. It was part of the Hallicrafters lineup, a company renowned for its high-quality amateur and shortwave radios. The CB-7 was particularly favored by truckers, hobbyists, and small businesses for its reliability and ease of use.</p>
+
+      <h3>Additional Details:</h3>
+      <p>The CB-7 is now considered a collector's item, valued for its historical significance and vintage appeal. Enthusiasts often restore and display these radios as a testament to the early days of CB communication.</p>
+  <div class="footer">
+    <h2>N4IXTs Hallicrafters CB-7 Other Images</h2>
+    <a href=".jpg" target="_blank">
+      <img src=".jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters CB-7">
+    </a>
+    <p></p>
+    <p>&nbsp;</p>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

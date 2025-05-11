@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters S-10 Ultra Skyrider</h1>
+    <a href="s-10.jpg" target="_blank">
+      <img src="s-10.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters S-10 Ultra Skyrider">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters S-10 Ultra Skyrider</h2>
+      <h3>Years of Production: 1936-1938</h3>
+      <p>The Hallicrafters S-10 Ultra Skyrider was a groundbreaking shortwave receiver introduced in the mid-1930s. It was designed for amateur radio enthusiasts and professionals who required high-performance equipment during the golden age of radio communication.</p>
+
+      <h3>Technical Specifications:</h3>
+      <ul>
+        <li>Frequency Coverage: 1.5 MHz to 30 MHz</li>
+        <li>Tubes: 9 vacuum tubes for enhanced performance</li>
+        <li>IF Frequency: 465 kHz</li>
+        <li>Power Supply: 110-120V AC</li>
+        <li>Audio Output: 2.5 watts</li>
+      </ul>
+
+      <h3>Notable Features:</h3>
+      <ul>
+        <li>High sensitivity and selectivity for clear signal reception</li>
+        <li>Bandspread tuning for precise frequency adjustments</li>
+        <li>Beautifully designed metal chassis with a durable finish</li>
+        <li>Built-in speaker for convenient audio output</li>
+      </ul>
+
+      <h3>Historical Context:</h3>
+      <p>The S-10 Ultra Skyrider was introduced during a time when shortwave radio was becoming increasingly popular for both hobbyists and professionals. Its advanced features and reliable performance made it a favorite among early radio operators. The radio played a significant role in advancing communication technology and remains a cherished piece of history for collectors and enthusiasts today.</p>
+
+      <h3>Additional Details:</h3>
+      <p>The Hallicrafters S-10 Ultra Skyrider is often regarded as a symbol of innovation in the early days of radio. Its robust design and exceptional performance set a standard for future receivers, and it continues to be a sought-after item for vintage radio collectors.</p>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters Command Line Radio</h1>
+    <a href="command-line-01.jpg" target="_blank">
+      <img src="command-line-01.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters Command Line Radio">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters Command Line Radio</h2>
+      <h3>Years of Production: 1950s</h3>
+      <p>The Hallicrafters Command Line Radio was a pioneering piece of equipment designed for amateur radio operators and professionals in the 1950s. It was known for its innovative features and robust performance, making it a popular choice among radio enthusiasts.</p>
+
+      <h3>Technical Specifications:</h3>
+      <ul>
+        <li>Frequency Range: 1.5 MHz to 30 MHz</li>
+        <li>Tuning: Continuous tuning with a variable capacitor</li>
+        <li>IF Frequency: 455 kHz</li>
+        <li>Power Supply: 110V AC</li>
+        <li>Dimensions: 12 x 8 x 6 inches</li>
+      </ul>
+
+      <h3>Notable Features:</h3>
+      <ul>
+        <li>High sensitivity and selectivity for clear signal reception</li>
+        <li>Built-in speaker for convenient audio output</li>
+        <li>Durable metal chassis with a classic design</li>
+        <li>Easy-to-read dial with calibrated frequency markings</li>
+      </ul>
+
+      <h3>Historical Context:</h3>
+      <p>The Hallicrafters Command Line Radio was introduced during a time when shortwave radio was becoming increasingly popular among hobbyists and professionals. It was part of Hallicrafters' lineup, a company known for its high-quality amateur radio equipment. The Command Line Radio was particularly favored by radio enthusiasts for its performance and reliability.</p>
+
+      <h3>Additional Details:</h3>
+      <p>The Command Line Radio is now considered a collector's item, valued for its historical significance and vintage appeal. Many enthusiasts restore these radios to their original condition, preserving a piece of radio history.</p>
+    </div>
+  <div class="footer">
+    <h2>N4IXTs Hallicrafters Command Line Radio Other Images</h2>
+    <a href=".jpg" target="_blank">
+      <img src=".jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters Command Line Radio">
+    </a>
+    <p></p>
+    <p>&nbsp;</p>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
