@@ -53,3 +53,7 @@ body {
   margin-bottom: 20px;
   margin-top: 20px;
 }
+.underline {
+    border-bottom: 2px solid black; /* Adds a line below */
+    padding-bottom: 5px;
+}
