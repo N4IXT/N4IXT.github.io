@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>N4IXTs Hallicrafters HA-4 Keyer</h1>
+    <a href="ha-4-01.jpg" target="_blank">
+      <img src="ha-4-01.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters HA-4 Keyer">
+    </a>
+  </div>
+  <div class="main">
+    <div class="menu">
+      <h2>Menu</h2>
+    <div id="menu-content"></div>
+    </div>
+    <div class="content">
+      <h2>Hallicrafters HA-4 Keyer</h2>
+      <h3>Years of Production: 1961–1963</h3>
+
+      <h4>Technical Specifications</h4>
+      <ul>
+        <li>Type: Electronic Morse Code Keyer</li>
+        <li>Power Supply: 115V AC, 60 Hz</li>
+        <li>Output: Relay contacts for transmitter keying</li>
+        <li>Speed Range: Approximately 10–60 WPM (Words Per Minute)</li>
+        <li>Controls: Speed, Weight, Dot/Space adjustment, Manual keying lever</li>
+        <li>Inputs: Paddle (for iambic or single-lever operation)</li>
+        <li>Dimensions: Approx. 6.5 x 4.5 x 7.5 inches</li>
+        <li>Weight: Approx. 5 lbs</li>
+      </ul>
+
+      <h4>Notable Features</h4>
+      <ul>
+        <li>Solid-state circuitry (early use of transistors in keyers)</li>
+        <li>Adjustable sending speed and weighting</li>
+        <li>Relay output for compatibility with a wide range of transmitters</li>
+        <li>Manual lever for hand keying or testing</li>
+        <li>Compact and rugged metal case</li>
+      </ul>
+
+      <h4>Historical Context</h4>
+      <p>
+        The Hallicrafters HA-4 was introduced in the early 1960s as one of the first commercially available electronic keyers for amateur radio operators. At a time when most operators used mechanical "bug" keyers or straight keys, the HA-4 offered improved consistency and speed for sending Morse code. Its solid-state design was innovative for the era, providing reliable operation and low maintenance compared to tube-based or mechanical alternatives.
+      </p>
+      <p>
+        The HA-4 was often paired with Hallicrafters transmitters and transceivers, such as the HT-32 and SX-101, and became popular among CW (Continuous Wave) enthusiasts. Its introduction marked a significant step forward in amateur radio technology, paving the way for more advanced keyers and digital modes in later years.
+      </p>
+
+        <div class="footer">
+          <h2>N4IXTs Hallicrafters HA-4 Keyer Other Images</h2>
+          <a href="ha-4-02.jpg" target="_blank">
+            <img src="ha-4-02.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters HA-4 Keyer Rear View">
+          </a>
+          <p>HA-4 Rear View</p>
+          <p>&nbsp;</p>
+          <a href="ha-4-03.jpg" target="_blank">
+            <img src="ha-4-03.jpg" style="max-width: 640px;" alt="N4IXTs Hallicrafters HA-4 Keyer Side View">
+          </a>
+          <p>HA-4 Side View</p>
+          <p>&nbsp;</p>
+        </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu-content').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
